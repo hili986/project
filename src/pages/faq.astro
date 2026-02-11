@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { faqs } from '../utils/data';
+---
+
+<BaseLayout title="常见问题">
+  <h1 class="text-2xl font-bold mb-6">常见问题 FAQ</h1>
+  {faqs.length > 0 ? (
+    <div class="space-y-4">
+      {faqs.map((faq, i) => (
+        <details class="border rounded-lg" open={i === 0}>
+          <summary class="p-4 font-medium cursor-pointer hover:bg-gray-50 transition">
+            {faq.q}
+          </summary>
+          <div class="px-4 pb-4 text-gray-700 text-sm">
+            {faq.a}
+          </div>
+        </details>
+      ))}
+    </div>
+  ) : (
+    <p class="text-gray-500">暂无常见问题，敬请期待。</p>
+  )}
+  <p class="mt-8 text-sm text-gray-500">
+    找不到你的问题？<a href="/feedback" class="text-blue-700 hover:underline">提交反馈</a>，我们会尽快补充。
+  </p>
+</BaseLayout>

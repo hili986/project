@@ -1,0 +1,26 @@
+---
+import type { Stage } from '../types';
+import { STAGE_LABELS } from '../types';
+
+interface Props {
+  stage: Stage;
+  count: number;
+}
+
+const { stage, count } = Astro.props;
+
+const icons: Record<Stage, string> = {
+  pre_admission: '📋',
+  enrollment_day: '🏫',
+  after_enrollment: '📚',
+  graduation: '🎓',
+};
+---
+
+<div class="flex items-center gap-3 p-3 bg-white border-l-4 border-blue-600 rounded shadow-sm">
+  <span class="text-2xl">{icons[stage]}</span>
+  <div>
+    <h3 class="font-bold text-gray-800">{STAGE_LABELS[stage]}</h3>
+    <p class="text-sm text-gray-500">{count} 个项目</p>
+  </div>
+</div>

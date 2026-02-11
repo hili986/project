@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { changelogEntries } from '../utils/data';
+---
+
+<BaseLayout title="更新日志">
+  <h1 class="text-2xl font-bold mb-2">更新日志</h1>
+  <p class="text-gray-600 mb-6">
+    记录每次数据变更，保持信息透明可追溯。
+  </p>
+
+  {changelogEntries.length > 0 ? (
+    <div class="space-y-4">
+      {changelogEntries.map((entry) => (
+        <div class="p-4 border rounded-lg">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-sm font-medium text-gray-900">{entry.date}</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800">{entry.type}</span>
+          </div>
+          <p class="text-gray-700 text-sm">{entry.summary}</p>
+          {entry.card_ids.length > 0 && (
+            <div class="flex flex-wrap gap-1.5 mt-2">
+              {entry.card_ids.map((id) => (
+                <a
+                  href={`/policy/${id}`}
+                  class="text-xs px-2 py-0.5 rounded bg-gray-100 text-blue-700 hover:underline"
+                >
+                  {id}
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  ) : (
+    <p class="text-gray-500">暂无更新日志。</p>
+  )}
+</BaseLayout>

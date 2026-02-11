@@ -1,0 +1,1455 @@
+[
+  {
+    "card_id": "AH-LOAN-CDB-2025",
+    "title": "安徽省国家开发银行生源地信用助学贷款（生源地贷款）",
+    "short_title": "安徽生源地贷款（国开行）",
+    "priority": "P0",
+    "level": "local",
+    "region": "安徽",
+    "province": "anhui",
+    "stage": [
+      "pre_admission",
+      "after_enrollment",
+      "graduation"
+    ],
+    "category": "loan",
+    "education_level": [
+      "undergrad",
+      "master",
+      "phd"
+    ],
+    "tags": [
+      "生源地贷款",
+      "国开行",
+      "共同借款人",
+      "学费住宿费",
+      "安徽"
+    ],
+    "eligible_text": "安徽户籍、家庭经济困难的全日制普通高校新生或在校生（含本专科、研究生、第二学士学位）可申请；学生与家长/监护人为共同借款人。",
+    "requires_financial_assessment": true,
+    "benefit_summary": "国家助学贷款，用于优先支付学费和住宿费，超出部分可用于弥补日常生活费；额度按国家与安徽当年政策执行（本专科最高20000元/年、研究生最高25000元/年）。",
+    "benefit_money_min": 1000.0,
+    "benefit_money_max": null,
+    "benefit_coverage": [
+      "tuition",
+      "accommodation",
+      "living"
+    ],
+    "benefit_frequency": "按学年申请、分学年发放",
+    "stacking_rules": "同一学年内不得同时获得校园地国家助学贷款与生源地贷款（只能择一）。以学校与银行最新规定为准。",
+    "application_window_text": "按安徽县级资助中心/指定办理点当年集中受理时间办理（例：7月15日至9月20日）。",
+    "application_steps": [
+      "登录国开行学生在线系统注册并提交申请，打印《申请表》并签字。",
+      "首次贷款：学生与共同借款人携带材料到户籍所在地县级学生资助管理中心/指定办理点办理。",
+      "续贷：可线下办理，亦可通过学生在线系统或国家助学贷款APP线上操作（按当年要求）。",
+      "报到：携带县级资助中心《受理证明》到高校报到，提醒高校在规定时间前录入电子回执。"
+    ],
+    "apply_portals": [
+      {
+        "name": "国开行助学贷款学生在线系统",
+        "url": "https://sls.cdb.com.cn/"
+      },
+      {
+        "name": "安徽（示例）办理指南（县政府转载）",
+        "url": "https://www.ahjinzhai.gov.cn/zwzx/gsgg/37913963.html"
+      },
+      {
+        "name": "教育部/财政部等：国家助学贷款政策调整（额度与利率）",
+        "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1779/202411/t20241104_1160686.html"
+      }
+    ],
+    "materials": [
+      "借款学生与共同借款人身份证原件、户口簿原件",
+      "录取通知书（或学生证）或学信网学籍在线验证报告",
+      "《国家开发银行生源地信用助学贷款申请表》",
+      "未通过预申请者：按指南要求提交《家庭经济困难学生认定表》（如需）"
+    ],
+    "processing_time": "按县级资助中心与银行审批流程执行",
+    "contact": "国开行全国服务热线95593；安徽省分行咨询电话见当年指南（示例见指南）。",
+    "tongji_mapping_text": "到同济报到时携带县级资助中心《受理证明》，交学校/学院资助老师并提醒在规定期限前录入电子回执（指南示例要求10月10日前录入）；未按时录入视同撤销当年贷款申请（以当年规定为准）。",
+    "risk_notes": "谨防“代办贷款/刷流水/收取手续费”等诈骗；不要错过受理窗口期；注意维护征信，逾期会影响个人信用记录。",
+    "status": "verified",
+    "valid_from": "2025-07-15",
+    "valid_to": "2025-09-20",
+    "last_updated": "2026-02-10",
+    "change_note": "首批安徽P0卡片：依据安徽指南与国家政策填充。",
+    "evidence_list": [
+      {
+        "source_name": "金寨县人民政府（转载安徽省教育厅/县教育局）",
+        "url": "https://www.ahjinzhai.gov.cn/zwzx/gsgg/37913963.html",
+        "doc_title": "2025年安徽省国家开发银行生源地信用助学贷款办理指南",
+        "doc_no": null,
+        "published_date": "2025-06-12",
+        "verified_date": "2026-02-10",
+        "scope": "适用于安徽（以县级资助中心受理为准；页面含受理时间与回执录入要求等）",
+        "quoted_excerpt": "贷款受理时间：7月15日至9月20日；本专科最高20000元/年、研究生最高25000元/年；高校10月10日前录入电子回执。"
+      },
+      {
+        "source_name": "教育部网站（财教〔2024〕188号）",
+        "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1779/202411/t20241104_1160686.html",
+        "doc_title": "关于调整完善国家助学贷款有关政策的通知",
+        "doc_no": "财教〔2024〕188号",
+        "published_date": "2024-10-31",
+        "verified_date": "2026-02-10",
+        "scope": "国家层面：额度与利率调整；与基层就业/服兵役代偿标准联动",
+        "quoted_excerpt": "自2024年秋季学期起，本专科每人每年不超过20000元，研究生不超过25000元；利率调整为LPR减70bp。"
+      }
+    ]
+  },
+  {
+    "card_id": "TJ-CHANNEL-GREEN-2025",
+    "title": "同济大学新生入学“绿色通道”（缓缴与入学保障）",
+    "short_title": "同济绿色通道",
+    "priority": "P0",
+    "level": "tongji",
+    "region": "同济大学",
+    "province": null,
+    "stage": [
+      "pre_admission",
+      "enrollment_day"
+    ],
+    "category": "channel",
+    "education_level": [
+      "undergrad",
+      "master",
+      "phd"
+    ],
+    "tags": [
+      "绿色通道",
+      "缓缴",
+      "新生",
+      "资助集市",
+      "入学保障"
+    ],
+    "eligible_text": "面向家庭经济困难新生（以及有入学缴费困难者），用于保障“先入学、后资助”。",
+    "requires_financial_assessment": null,
+    "benefit_summary": "可在迎新现场办理缓缴手续、咨询助学政策并获得入学保障服务；帮助缴费困难新生顺利完成报到。",
+    "benefit_money_min": null,
+    "benefit_money_max": null,
+    "benefit_coverage": [
+      "tuition",
+      "accommodation",
+      "fees",
+      "other"
+    ],
+    "benefit_frequency": "入学报到期间办理（以当年迎新安排为准）",
+    "stacking_rules": "与贷款/助学金等可配合使用；具体以当年学校安排为准。",
+    "application_window_text": "入学报到前可了解网上绿色通道；报到期间在迎新现场“资助集市”办理相关手续（以当年通知为准）。",
+    "application_steps": [
+      "入学前：阅读绿色通道介绍，准备基本情况说明与必要证明材料（如需）。",
+      "报到：前往迎新现场“资助集市/绿色通道”点位，咨询并办理缓缴或相关手续。",
+      "后续：按资助老师指引，完成困难认定与后续资助项目申请。"
+    ],
+    "apply_portals": [
+      {
+        "name": "同济大学党委学生工作部：绿色通道",
+        "url": "https://student.tongji.edu.cn/xszz/lstd.htm"
+      }
+    ],
+    "materials": [
+      "身份证明/录取信息（按迎新要求）",
+      "家庭经济困难情况说明及相关证明材料（如当年要求）"
+    ],
+    "processing_time": "通常在报到现场完成初步办理；后续事项按学校流程",
+    "contact": "同济大学党委学生工作部（学生资助）联系电话见页面页脚。",
+    "tongji_mapping_text": "对于安徽生源且已办理生源地贷款的学生，可同时在报到现场咨询“贷款回执录入/资助申请”对接路径；若贷款尚未办妥，绿色通道可先保障入学，再补办贷款或助学金流程。",
+    "risk_notes": "绿色通道不收取任何手续费；警惕假冒“资助老师/代办人员”的诈骗。",
+    "status": "verified",
+    "valid_from": null,
+    "valid_to": null,
+    "last_updated": "2026-02-10",
+    "change_note": "绿色通道作为报到兜底主入口。",
+    "evidence_list": [
+      {
+        "source_name": "同济大学党委学生工作部（学生资助）",
+        "url": "https://student.tongji.edu.cn/xszz/lstd.htm",
+        "doc_title": "绿色通道简介",
+        "doc_no": null,
+        "published_date": "2025-11-10",
+        "verified_date": "2026-02-10",
+        "scope": "同济新生入学保障：网上绿色通道+迎新现场“资助集市”",
+        "quoted_excerpt": "新生可在“资助集市”办理缓缴手续、咨询助学政策、学习防诈骗知识等。"
+      }
+    ]
+  },
+  {
+    "card_id": "TJ-INFO-TUITION-2025",
+    "title": "同济大学教育收费公示（学费/住宿费/学分学费等）",
+    "short_title": "同济收费公示",
+    "priority": "P0",
+    "level": "tongji",
+    "region": "同济大学",
+    "province": null,
+    "stage": [
+      "pre_admission"
+    ],
+    "category": "other",
+    "education_level": [
+      "undergrad",
+      "master",
+      "phd"
+    ],
+    "tags": [
+      "学费",
+      "收费公示",
+      "预算",
+      "学分学费"
+    ],
+    "eligible_text": "面向拟报考/已录取同济的学生与家长，用于核对学费与相关收费标准。",
+    "requires_financial_assessment": false,
+    "benefit_summary": "提供同济官方教育收费项目、计费单位、标准、依据等信息，可用于预算与贷款额度决策。",
+    "benefit_money_min": null,
+    "benefit_money_max": null,
+    "benefit_coverage": [
+      "fees",
+      "tuition",
+      "accommodation"
+    ],
+    "benefit_frequency": "按年度发布（以信息公开网为准）",
+    "stacking_rules": "本条目为信息公示，不涉及互斥。",
+    "application_window_text": "全年可查询；以最新学年公示表为准。",
+    "application_steps": [
+      "在信息公开网打开最新“教育收费公示表”。",
+      "根据个人学段与专业类别查找学费标准与学分学费标准。",
+      "据此估算年度费用，并结合贷款/助学金等制定筹资方案。"
+    ],
+    "apply_portals": [
+      {
+        "name": "同济大学信息公开网：2025年教育收费公示表",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=3176&newsid=19321&t=show"
+      },
+      {
+        "name": "同济大学信息公开网：收费项目、依据、标准栏目（历年）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=3176"
+      }
+    ],
+    "materials": [],
+    "processing_time": null,
+    "contact": "同济大学财务处（信息公开网条目中可查）",
+    "tongji_mapping_text": "安徽生源学生可用本公示表估算年度学费/住宿费，决定是否需要申请生源地贷款（额度上限按国家政策）。",
+    "risk_notes": "务必以“最新年度公示表”为准；注意专业类别和学制差异。",
+    "status": "verified",
+    "valid_from": "2024-12-31",
+    "valid_to": null,
+    "last_updated": "2026-02-10",
+    "change_note": "用于预算与贷款额度决策的核心信息源。",
+    "evidence_list": [
+      {
+        "source_name": "同济大学信息公开网（财务处）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=3176&newsid=19321&t=show",
+        "doc_title": "2025年同济大学教育收费公示表",
+        "doc_no": null,
+        "published_date": "2024-12-31",
+        "verified_date": "2026-02-10",
+        "scope": "同济教育收费项目、标准与依据（含本科、研究生等）",
+        "quoted_excerpt": "列明本科文科/理工体/医学/艺术类学费区间及学分学费标准等。"
+      }
+    ]
+  },
+  {
+    "card_id": "TJ-MAP-LOAN-RECEIPT-2025",
+    "title": "生源地贷款到同济的“电子回执录入/学籍核验”对接",
+    "short_title": "贷款回执对接",
+    "priority": "P0",
+    "level": "tongji",
+    "region": "同济大学",
+    "province": null,
+    "stage": [
+      "enrollment_day",
+      "after_enrollment"
+    ],
+    "category": "loan",
+    "education_level": [
+      "undergrad",
+      "master",
+      "phd"
+    ],
+    "tags": [
+      "生源地贷款",
+      "电子回执",
+      "报到",
+      "学籍核验"
+    ],
+    "eligible_text": "已在生源地（如安徽）办理国家助学贷款并取得《受理证明》的新生/在校生。",
+    "requires_financial_assessment": true,
+    "benefit_summary": "确保生源地贷款顺利生效并用于缴纳学费住宿费；避免因回执未录入导致贷款撤销。",
+    "benefit_money_min": null,
+    "benefit_money_max": null,
+    "benefit_coverage": [
+      "tuition",
+      "accommodation"
+    ],
+    "benefit_frequency": "每学年（按贷款年度办理；报到及续贷阶段均可能涉及）",
+    "stacking_rules": "生源地贷款与校园地国家助学贷款同一学年只能择一（见同济国家助学贷款管理办法）。",
+    "application_window_text": "报到及学校规定的回执录入期限内完成（示例指南要求10月10日前录入）。",
+    "application_steps": [
+      "报到时向学校/学院资助老师提交《受理证明》或按要求提交贷款信息。",
+      "确认学校已在国开行系统完成电子回执录入（按当年截止日期）。",
+      "如信息有误或被退回，按学校提示补充材料并重新提交。"
+    ],
+    "apply_portals": [
+      {
+        "name": "安徽（示例）指南：回执录入要求",
+        "url": "https://www.ahjinzhai.gov.cn/zwzx/gsgg/37913963.html"
+      },
+      {
+        "name": "同济大学国家助学贷款管理办法（学校对生源地贷款的学籍、续贷、毕业确认等职责）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11610&newsid=12368&t=show"
+      }
+    ],
+    "materials": [
+      "县级资助中心《受理证明》（或银行/系统要求的回执材料）",
+      "学生学籍/录取信息（由学校核验）"
+    ],
+    "processing_time": "通常由学校资助部门在系统内完成录入；以当年通知为准",
+    "contact": "学院学生工作办公室/学校学生资助部门（按当年迎新安排）",
+    "tongji_mapping_text": "安徽生源同学重点动作：把《受理证明》交给学院/学校资助老师并确认已录入；若系统回执未按时录入，可能被视同撤销贷款申请（见安徽指南示例）。",
+    "risk_notes": "不要把受理证明交给非官方人员；保留回执与合同信息截图以便核对。",
+    "status": "verified",
+    "valid_from": null,
+    "valid_to": null,
+    "last_updated": "2026-02-10",
+    "change_note": "将“地方办理”与“同济对接”明确为一张卡。",
+    "evidence_list": [
+      {
+        "source_name": "金寨县人民政府（转载安徽省教育厅/县教育局）",
+        "url": "https://www.ahjinzhai.gov.cn/zwzx/gsgg/37913963.html",
+        "doc_title": "2025年安徽省国家开发银行生源地信用助学贷款办理指南（回执录入要求）",
+        "doc_no": null,
+        "published_date": "2025-06-12",
+        "verified_date": "2026-02-10",
+        "scope": "示例：要求高校在当年10月10日前录入电子回执，否则视同撤销申请",
+        "quoted_excerpt": "持《受理证明》前往高校报到，由高校学生资助管理中心老师于当年10月10日前录入电子回执。"
+      },
+      {
+        "source_name": "同济大学信息公开网（学生处）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11610&newsid=12368&t=show",
+        "doc_title": "同济大学国家助学贷款管理办法（2019年修订）",
+        "doc_no": null,
+        "published_date": "2019-09-20",
+        "verified_date": "2026-02-10",
+        "scope": "学校对生源地贷款学生的学籍信息、续贷、毕业还款确认等职责；同一学年贷款择一规则",
+        "quoted_excerpt": "同一学年内不得重复申请生源地贷款与校园地贷款，只能选择其中一种。"
+      }
+    ]
+  },
+  {
+    "card_id": "TJ-ASSESSMENT-NEED-2023",
+    "title": "同济大学助学成才服务对象认定（家庭经济困难认定）",
+    "short_title": "困难认定（助学成才）",
+    "priority": "P0",
+    "level": "tongji",
+    "region": "同济大学",
+    "province": null,
+    "stage": [
+      "enrollment_day",
+      "after_enrollment"
+    ],
+    "category": "assessment",
+    "education_level": [
+      "undergrad",
+      "master",
+      "phd"
+    ],
+    "tags": [
+      "困难认定",
+      "助学成才服务对象",
+      "资助前置"
+    ],
+    "eligible_text": "同济在籍在校全日制学生中家庭经济困难者（助学成才服务对象），作为多类资助申请的前置条件。",
+    "requires_financial_assessment": null,
+    "benefit_summary": "完成认定后可作为申请国家助学金、校级助学金、部分贷款/临困等项目的重要依据（以当年规则为准）。",
+    "benefit_money_min": null,
+    "benefit_money_max": null,
+    "benefit_coverage": [
+      "other"
+    ],
+    "benefit_frequency": "通常按学年认定/动态管理（以学校当年通知为准）",
+    "stacking_rules": "认定结果可用于多项目申请，但具体叠加规则以各项目细则为准。",
+    "application_window_text": "新生入学后及每学年按学校/学院安排开展（以当年通知为准）。",
+    "application_steps": [
+      "按学校要求在校内系统提交认定申请与佐证材料（具体入口以当年通知为准）。",
+      "学院/学校审核、公示（如有）并确定认定等级/结果。",
+      "在认定有效期内申请助学金、勤工助学、临困补助等项目。"
+    ],
+    "apply_portals": [
+      {
+        "name": "同济大学信息公开网：助学成才服务对象认定办法（2023修订版）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11610&newsid=17532&t=show"
+      },
+      {
+        "name": "同济党委学工部：助学金栏目（提醒“申请助学金前先完成认定”）",
+        "url": "https://student.tongji.edu.cn/xszz/zxj.htm"
+      }
+    ],
+    "materials": [
+      "按学校认定办法与当年通知要求提交（可能包括家庭经济情况说明/相关证明等）"
+    ],
+    "processing_time": "按学院审核与学校复核流程执行",
+    "contact": "学院学生工作办公室/学生处资助业务口径（以当年通知为准）",
+    "tongji_mapping_text": "安徽生源学生：无论是否办理生源地贷款，若家庭经济困难且计划申请同济校内助学金/临困/勤工等，建议尽早完成“助学成才服务对象认定”，以免错过后续申报窗口。",
+    "risk_notes": "如材料与实际不符可能影响后续资助资格；注意认定结果有效期与动态调整。",
+    "status": "verified",
+    "valid_from": null,
+    "valid_to": null,
+    "last_updated": "2026-02-10",
+    "change_note": "资助申请前置关键条目。",
+    "evidence_list": [
+      {
+        "source_name": "同济大学信息公开网（学生处）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11610&newsid=17532&t=show",
+        "doc_title": "同济大学助学成才服务对象认定办法（2023修订版）",
+        "doc_no": null,
+        "published_date": "2023-11-02",
+        "verified_date": "2026-02-10",
+        "scope": "家庭经济困难学生认定（助学成才服务对象）制度",
+        "quoted_excerpt": "信息公开条目：助学成才服务对象认定办法（2023修订版）。"
+      },
+      {
+        "source_name": "同济大学党委学生工作部（学生资助）",
+        "url": "https://student.tongji.edu.cn/xszz/zxj.htm",
+        "doc_title": "助学金简介（含“申请助学金前请先完成助学成才服务对象认定”提示）",
+        "doc_no": null,
+        "published_date": "2025-11-10",
+        "verified_date": "2026-02-10",
+        "scope": "学生资助栏目对助学金分类与申请前置提示",
+        "quoted_excerpt": "申请助学金前请先完成助学成才服务对象认定。"
+      }
+    ]
+  },
+  {
+    "card_id": "TJ-SUBSIDY-TEMP-2023",
+    "title": "同济大学学生临时困难补助（应急兜底）",
+    "short_title": "临时困难补助",
+    "priority": "P0",
+    "level": "tongji",
+    "region": "同济大学",
+    "province": null,
+    "stage": [
+      "enrollment_day",
+      "after_enrollment"
+    ],
+    "category": "subsidy",
+    "education_level": [
+      "undergrad",
+      "master",
+      "phd"
+    ],
+    "tags": [
+      "临时困难",
+      "应急",
+      "灾害",
+      "疾病",
+      "路费"
+    ],
+    "eligible_text": "同济在籍在校学生因突发事件/重大变故造成临时经济困难者（以学校管理办法为准）。",
+    "requires_financial_assessment": null,
+    "benefit_summary": "对突发困难提供临时性经济支持（具体资助标准、类型与流程以学校管理办法和当年通知为准）。",
+    "benefit_money_min": null,
+    "benefit_money_max": null,
+    "benefit_coverage": [
+      "living",
+      "fees",
+      "other"
+    ],
+    "benefit_frequency": "触发式、按需申请",
+    "stacking_rules": "可与贷款/助学金等并行；同一事项可能有额度或次数限制（以学校规定为准）。",
+    "application_window_text": "出现突发困难后按学校流程及时申请（全年滚动或按通知）。",
+    "application_steps": [
+      "向学院辅导员/学工办说明情况并提出申请。",
+      "按学校要求提交情况说明及佐证材料（如医疗、灾害、家庭变故等）。",
+      "学院初审、学校复核与发放（以当年流程为准）。"
+    ],
+    "apply_portals": [
+      {
+        "name": "同济大学信息公开网：学生临时困难补助管理办法（2023修订版）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11610&newsid=17531&t=show"
+      },
+      {
+        "name": "同济党委学工部：临时困难补助栏目（简介）",
+        "url": "https://student.tongji.edu.cn/xszz/lsknbz.htm"
+      }
+    ],
+    "materials": [
+      "情况说明+佐证材料（按管理办法与当年通知要求）"
+    ],
+    "processing_time": "按学院与学校审批周期执行",
+    "contact": "学院学生工作办公室/学生处资助老师",
+    "tongji_mapping_text": "安徽生源新生若报到阶段出现突发缺口，可先通过绿色通道完成报到，再在学院指导下申请临时困难补助作为兜底。",
+    "risk_notes": "如遇诈骗或被要求缴费“才能拿补助”，应立即停止并向学校核实。",
+    "status": "verified",
+    "valid_from": null,
+    "valid_to": null,
+    "last_updated": "2026-02-10",
+    "change_note": "应急兜底类项目卡。",
+    "evidence_list": [
+      {
+        "source_name": "同济大学信息公开网（学生处）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11610&newsid=17531&t=show",
+        "doc_title": "同济大学学生临时困难补助管理办法（2023修订版）",
+        "doc_no": null,
+        "published_date": "2023-11-02",
+        "verified_date": "2026-02-10",
+        "scope": "临时困难补助的管理制度",
+        "quoted_excerpt": "信息公开条目：学生临时困难补助管理办法（2023修订版）。"
+      },
+      {
+        "source_name": "同济大学党委学生工作部（学生资助）",
+        "url": "https://student.tongji.edu.cn/xszz/lsknbz.htm",
+        "doc_title": "临时困难补助（栏目入口）",
+        "doc_no": null,
+        "published_date": null,
+        "verified_date": "2026-02-10",
+        "scope": "栏目入口（便于学生查找最新通知/说明）",
+        "quoted_excerpt": "栏目提供临时困难补助相关信息入口。"
+      }
+    ]
+  },
+  {
+    "card_id": "TJ-GRANT-NATIONAL-2025",
+    "title": "本科生国家助学金（同济执行）",
+    "short_title": "国家助学金",
+    "priority": "P0",
+    "level": "tongji",
+    "region": "同济大学",
+    "province": null,
+    "stage": [
+      "after_enrollment"
+    ],
+    "category": "grant",
+    "education_level": [
+      "undergrad"
+    ],
+    "tags": [
+      "国家助学金",
+      "困难生",
+      "助学成才服务对象"
+    ],
+    "eligible_text": "同济全日制在校本科生（含预科、第二学士学位）中，经认定的助学成才服务对象；全日制退役士兵学生全部享受。",
+    "requires_financial_assessment": true,
+    "benefit_summary": "按学校细则分档资助（示例：一等一般4400元/年、二等一般2900元/年；退役士兵一般3700元/年；以当年发放口径为准）。",
+    "benefit_money_min": 2900.0,
+    "benefit_money_max": 4400.0,
+    "benefit_coverage": [
+      "living"
+    ],
+    "benefit_frequency": "按学年评定，按学校发放安排执行",
+    "stacking_rules": "可与奖学金、勤工助学等叠加；与其他资助的互斥以当年细则为准。",
+    "application_window_text": "通常每学年评定一次（以学校/学院当年通知为准）。",
+    "application_steps": [
+      "先完成“助学成才服务对象认定”（困难认定）。",
+      "在学校规定时间内通过校内系统提交国家助学金申请。",
+      "学院初评与公示，学校审核后发放。"
+    ],
+    "apply_portals": [
+      {
+        "name": "同济大学信息公开网：本科生国家助学金评定细则（2025年修订）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11610&newsid=19966&t=show"
+      },
+      {
+        "name": "国家奖助学金政策调整通知（国家层面）",
+        "url": "https://www.gov.cn/zhengce/zhengceku/202410/content_6983670.htm"
+      }
+    ],
+    "materials": [
+      "按学校细则与当年通知要求（含认定结果、申请表等）"
+    ],
+    "processing_time": "按学院评审与学校审核周期执行",
+    "contact": "学院学工办/学生处资助业务",
+    "tongji_mapping_text": "安徽生源学生：若已办理生源地贷款，仍可在符合条件时申请国家助学金（助学金为生活补助性质，贷款为可还款融资工具；具体叠加以学校评审细则为准）。",
+    "risk_notes": "务必关注学院通知与公示期；提交材料真实有效。",
+    "status": "verified",
+    "valid_from": "2025-09-01",
+    "valid_to": "2026-08-31",
+    "last_updated": "2026-02-10",
+    "change_note": "依据同济2025修订细则填充金额档位。",
+    "evidence_list": [
+      {
+        "source_name": "同济大学信息公开网（学生处）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11610&newsid=19966&t=show",
+        "doc_title": "同济大学本科生国家助学金评定细则（2025年修订）",
+        "doc_no": "同济学〔2025〕24号（通知中出现）",
+        "published_date": "2025-06-29",
+        "verified_date": "2026-02-10",
+        "scope": "同济本科生国家助学金资助对象、标准与流程",
+        "quoted_excerpt": "资助标准分为两个等级：一等一般4400元/年，二等一般2900元/年；退役士兵一般3700元/年（以当年发放口径为准）。"
+      },
+      {
+        "source_name": "中国政府网（财教〔2024〕181号）",
+        "url": "https://www.gov.cn/zhengce/zhengceku/202410/content_6983670.htm",
+        "doc_title": "关于调整高等教育阶段和高中阶段国家奖助学金政策的通知",
+        "doc_no": "财教〔2024〕181号",
+        "published_date": "2024-10-25",
+        "verified_date": "2026-02-10",
+        "scope": "国家层面：奖学金名额与标准调整（含国家助学金平均资助标准调整）",
+        "quoted_excerpt": "从2024年秋季学期起，提高本专科生国家助学金平均资助标准（高校在区间内分档）。"
+      }
+    ]
+  },
+  {
+    "card_id": "TJ-AWARD-NATIONAL-2024",
+    "title": "本科生国家奖学金（同济评审）",
+    "short_title": "国家奖学金",
+    "priority": "P0",
+    "level": "national",
+    "region": "全国/同济大学",
+    "province": null,
+    "stage": [
+      "after_enrollment"
+    ],
+    "category": "award",
+    "education_level": [
+      "undergrad"
+    ],
+    "tags": [
+      "国家奖学金",
+      "评审",
+      "公示"
+    ],
+    "eligible_text": "同济在籍在校全日制本科生中符合国家奖学金评审条件者（以当年国家与学校通知为准）。",
+    "requires_financial_assessment": false,
+    "benefit_summary": "国家奖学金奖励标准：自2024年起，本专科生每生每年10000元（以当年政策为准）。",
+    "benefit_money_min": 10000.0,
+    "benefit_money_max": 10000.0,
+    "benefit_coverage": [
+      "other"
+    ],
+    "benefit_frequency": "按学年评审",
+    "stacking_rules": "同一评奖年度与其他奖项是否兼得以学校奖励管理办法与当年评审通知为准。",
+    "application_window_text": "通常每学年秋季学期启动评审（以学校/学院当年通知为准）。",
+    "application_steps": [
+      "关注学校/学院发布的国家奖学金评审通知。",
+      "按通知要求在校内系统提交申请与支撑材料。",
+      "学院评审与公示，学校审核后上报/发放。"
+    ],
+    "apply_portals": [
+      {
+        "name": "中国政府网：奖学金标准调整（财教〔2024〕181号）",
+        "url": "https://www.gov.cn/zhengce/zhengceku/202410/content_6983670.htm"
+      },
+      {
+        "name": "同济大学信息公开网：学生奖励管理办法（2025修正，作为校内依据入口）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11611&newsid=20849&t=show"
+      },
+      {
+        "name": "学院通知示例：本科生奖学金评审工作（示例，仅作流程参考）",
+        "url": "https://caup.tongji.edu.cn/77/e6/c33339a358374/page.htm"
+      }
+    ],
+    "materials": [
+      "按当年评审通知（通常包括申请表、成绩与成果证明等）"
+    ],
+    "processing_time": "按学院与学校评审周期执行",
+    "contact": "学院学生工作办公室/学生处",
+    "tongji_mapping_text": "安徽生源学生：国家奖学金为学业/综合表现类奖励，与生源地贷款并不冲突；但材料准备与学院评审节奏非常重要，建议按学年早做成果与证明整理。",
+    "risk_notes": "避免伪造/夸大材料；注意公示期申诉渠道。",
+    "status": "needs_review",
+    "valid_from": null,
+    "valid_to": null,
+    "last_updated": "2026-02-10",
+    "change_note": "金额依据国家文件明确；同济具体评审节点需结合当年通知再核验。",
+    "evidence_list": [
+      {
+        "source_name": "中国政府网（财教〔2024〕181号）",
+        "url": "https://www.gov.cn/zhengce/zhengceku/202410/content_6983670.htm",
+        "doc_title": "关于调整高等教育阶段和高中阶段国家奖助学金政策的通知",
+        "doc_no": "财教〔2024〕181号",
+        "published_date": "2024-10-25",
+        "verified_date": "2026-02-10",
+        "scope": "国家层面：本专科生国家奖学金标准提高到10000元/年",
+        "quoted_excerpt": "从2024年起，本专科生国家奖学金奖励标准由8000元提高到10000元。"
+      },
+      {
+        "source_name": "同济大学信息公开网",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11611&newsid=20849&t=show",
+        "doc_title": "同济大学学生奖励管理办法（2025年12月26日修正）",
+        "doc_no": null,
+        "published_date": "2025-12-29",
+        "verified_date": "2026-02-10",
+        "scope": "同济校内奖学金评审与管理的制度依据入口（具体条文需打开附件核对）",
+        "quoted_excerpt": "信息公开条目：学生奖励管理办法（2025修正）。"
+      },
+      {
+        "source_name": "同济大学建筑与城市规划学院（通知示例）",
+        "url": "https://caup.tongji.edu.cn/77/e6/c33339a358374/page.htm",
+        "doc_title": "关于2024—2025学年本科生奖学金评审工作的通知",
+        "doc_no": null,
+        "published_date": "2025-10-??",
+        "verified_date": "2026-02-10",
+        "scope": "学院层面流程与时间节点示例（用于理解‘系统申请-学院评审-公示’流程）",
+        "quoted_excerpt": "通知说明本科生奖学金评审依据学校奖励管理办法及学院细则。"
+      }
+    ]
+  },
+  {
+    "card_id": "TJ-AWARD-INSPIRATION-2024",
+    "title": "本科生国家励志奖学金（同济评审）",
+    "short_title": "国家励志奖学金",
+    "priority": "P0",
+    "level": "national",
+    "region": "全国/同济大学",
+    "province": null,
+    "stage": [
+      "after_enrollment"
+    ],
+    "category": "award",
+    "education_level": [
+      "undergrad"
+    ],
+    "tags": [
+      "国家励志奖学金",
+      "困难生",
+      "评审"
+    ],
+    "eligible_text": "同济在籍在校全日制本科生中品学兼优且家庭经济困难者（以当年国家与学校通知为准）。",
+    "requires_financial_assessment": true,
+    "benefit_summary": "国家励志奖学金奖励标准：自2024年起，每生每年6000元（以当年政策为准）。",
+    "benefit_money_min": 6000.0,
+    "benefit_money_max": 6000.0,
+    "benefit_coverage": [
+      "other"
+    ],
+    "benefit_frequency": "按学年评审",
+    "stacking_rules": "与国家助学金等是否可兼得以当年学校评审口径为准。",
+    "application_window_text": "通常每学年秋季学期启动评审（以学校/学院当年通知为准）。",
+    "application_steps": [
+      "先完成困难认定（助学成才服务对象认定）。",
+      "关注学校/学院发布的国家励志奖学金评审通知。",
+      "按通知要求提交申请与支撑材料，学院评审公示后学校审核。"
+    ],
+    "apply_portals": [
+      {
+        "name": "中国政府网：励志奖学金标准调整（财教〔2024〕181号）",
+        "url": "https://www.gov.cn/zhengce/zhengceku/202410/content_6983670.htm"
+      },
+      {
+        "name": "同济大学信息公开网：学生奖励管理办法（2025修正）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11611&newsid=20849&t=show"
+      }
+    ],
+    "materials": [
+      "按当年评审通知（通常含困难认定结果、申请表、成绩/表现材料等）"
+    ],
+    "processing_time": "按学院与学校评审周期执行",
+    "contact": "学院学生工作办公室/学生处",
+    "tongji_mapping_text": "安徽生源学生：国家励志奖学金通常要求家庭经济困难+综合表现；建议把困难认定、学习成绩与第二课堂证明材料按学年归档，方便申报。",
+    "risk_notes": "注意与其他奖助项目的互斥规则（以当年通知为准）。",
+    "status": "needs_review",
+    "valid_from": null,
+    "valid_to": null,
+    "last_updated": "2026-02-10",
+    "change_note": "金额依据国家文件明确；同济具体兼得规则需结合当年通知核验。",
+    "evidence_list": [
+      {
+        "source_name": "中国政府网（财教〔2024〕181号）",
+        "url": "https://www.gov.cn/zhengce/zhengceku/202410/content_6983670.htm",
+        "doc_title": "关于调整高等教育阶段和高中阶段国家奖助学金政策的通知",
+        "doc_no": "财教〔2024〕181号",
+        "published_date": "2024-10-25",
+        "verified_date": "2026-02-10",
+        "scope": "国家层面：国家励志奖学金标准提高到6000元/年",
+        "quoted_excerpt": "从2024年起，本专科生国家励志奖学金奖励标准由5000元提高到6000元。"
+      },
+      {
+        "source_name": "同济大学信息公开网",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11611&newsid=20849&t=show",
+        "doc_title": "同济大学学生奖励管理办法（2025年12月26日修正）",
+        "doc_no": null,
+        "published_date": "2025-12-29",
+        "verified_date": "2026-02-10",
+        "scope": "同济校内评审依据入口",
+        "quoted_excerpt": "信息公开条目：学生奖励管理办法（2025修正）。"
+      }
+    ]
+  },
+  {
+    "card_id": "TJ-WORKSTUDY-2023",
+    "title": "同济大学勤工助学（校内岗位）",
+    "short_title": "勤工助学",
+    "priority": "P0",
+    "level": "tongji",
+    "region": "同济大学",
+    "province": null,
+    "stage": [
+      "after_enrollment"
+    ],
+    "category": "workstudy",
+    "education_level": [
+      "undergrad",
+      "master",
+      "phd"
+    ],
+    "tags": [
+      "勤工助学",
+      "岗位",
+      "酬劳"
+    ],
+    "eligible_text": "同济在籍在校学生可按学校管理办法申请勤工助学岗位（部分岗位可能向困难生倾斜，以当年安排为准）。",
+    "requires_financial_assessment": null,
+    "benefit_summary": "通过校内岗位获得劳动报酬，用于补贴生活费；同时具备育人功能（以学校管理办法为准）。",
+    "benefit_money_min": null,
+    "benefit_money_max": null,
+    "benefit_coverage": [
+      "living"
+    ],
+    "benefit_frequency": "按月/按工时发放（以岗位与学校规定为准）",
+    "stacking_rules": "可与助学金/奖学金并行；需保证不影响学业（以学校规定为准）。",
+    "application_window_text": "学期内根据岗位发布与学校安排申请（滚动/集中均可能）。",
+    "application_steps": [
+      "关注学校/学院发布的勤工助学岗位信息。",
+      "按岗位要求提交申请并参加面试/审核。",
+      "上岗后按规定考勤与结算，领取报酬。"
+    ],
+    "apply_portals": [
+      {
+        "name": "同济大学信息公开网：学生勤工助学管理办法（2023年修订版）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11610&newsid=17348&t=show"
+      },
+      {
+        "name": "同济党委学工部：勤工助学栏目入口",
+        "url": "https://student.tongji.edu.cn/xszz/qgzx.htm"
+      }
+    ],
+    "materials": [
+      "按岗位要求（一般含学生证/学籍信息、申请表等）"
+    ],
+    "processing_time": "岗位审核周期不一（以岗位发布为准）",
+    "contact": "岗位发布单位/学院学工办/学生处",
+    "tongji_mapping_text": "安徽生源学生：若贷款尚未覆盖生活费缺口，可将勤工助学作为学期内的可持续补贴方式，与助学金/临困形成组合。",
+    "risk_notes": "警惕校外高薪兼职陷阱；以校内正规岗位为主，避免影响学习。",
+    "status": "verified",
+    "valid_from": null,
+    "valid_to": null,
+    "last_updated": "2026-02-10",
+    "change_note": "以信息公开的管理办法为依据。",
+    "evidence_list": [
+      {
+        "source_name": "同济大学信息公开网（学生处）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11610&newsid=17348&t=show",
+        "doc_title": "同济大学学生勤工助学管理办法（2023年修订版）",
+        "doc_no": "同济学〔2023〕45号（通知中出现）",
+        "published_date": "2023-10-18",
+        "verified_date": "2026-02-10",
+        "scope": "勤工助学岗位管理与申请要求",
+        "quoted_excerpt": "信息公开条目：学生勤工助学管理办法（2023修订版）。"
+      }
+    ]
+  },
+  {
+    "card_id": "TJ-LOAN-CAMPUS-2019",
+    "title": "校园地国家助学贷款（同济办理）",
+    "short_title": "校园地助学贷款",
+    "priority": "P1",
+    "level": "tongji",
+    "region": "同济大学",
+    "province": null,
+    "stage": [
+      "after_enrollment"
+    ],
+    "category": "loan",
+    "education_level": [
+      "undergrad",
+      "master",
+      "phd"
+    ],
+    "tags": [
+      "校园地贷款",
+      "国家助学贷款",
+      "中国银行"
+    ],
+    "eligible_text": "同济在册就读的家庭经济困难学生（本专科、研究生等）可按学校与经办银行要求申请校园地国家助学贷款。",
+    "requires_financial_assessment": true,
+    "benefit_summary": "国家助学贷款用于优先支付学费和住宿费；额度上限以国家最新政策为准（本专科不超过20000元/年、研究生不超过25000元/年）。",
+    "benefit_money_min": null,
+    "benefit_money_max": null,
+    "benefit_coverage": [
+      "tuition",
+      "accommodation"
+    ],
+    "benefit_frequency": "按学年申请，银行分期发放（以学校与银行为准）",
+    "stacking_rules": "同一学年内不得同时申请生源地贷款与校园地贷款，只能择一。",
+    "application_window_text": "通常在新学年开学初按学校通知提交申请（以当年通知为准）。",
+    "application_steps": [
+      "先完成困难认定（如学校要求）。",
+      "在学校规定时间内提交贷款申请与材料，由学校初审。",
+      "经办银行审批后签订合同并放款（款项一般先进入学校账户用于缴费）。"
+    ],
+    "apply_portals": [
+      {
+        "name": "同济大学信息公开网：国家助学贷款管理办法（2019修订）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11610&newsid=12368&t=show"
+      },
+      {
+        "name": "教育部：国家助学贷款政策调整（额度与利率）",
+        "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1779/202411/t20241104_1160686.html"
+      }
+    ],
+    "materials": [
+      "身份证明、学生证/录取通知书（按学校与银行要求）",
+      "家庭经济困难认定相关材料（按学校与银行要求）",
+      "经办银行要求的其他材料"
+    ],
+    "processing_time": "按学校初审+银行审批周期执行",
+    "contact": "学院学工办/学生处资助业务；经办银行（校内口径）",
+    "tongji_mapping_text": "安徽生源学生：若已办理生源地贷款，通常无需再办校园地贷款；如生源地贷款未办成且确有缴费困难，可在入学后咨询是否可转为校园地贷款路径（以学校与银行当年口径为准）。",
+    "risk_notes": "注意同一学年贷款择一规则；关注校内申请截止期。",
+    "status": "needs_review",
+    "valid_from": null,
+    "valid_to": null,
+    "last_updated": "2026-02-10",
+    "change_note": "同济2019管理办法中的额度条款可能已更新，已用国家2024政策作为额度依据，需进一步核验同济最新执行细则。",
+    "evidence_list": [
+      {
+        "source_name": "同济大学信息公开网（学生处）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11610&newsid=12368&t=show",
+        "doc_title": "同济大学国家助学贷款管理办法（2019年修订）",
+        "doc_no": null,
+        "published_date": "2019-09-20",
+        "verified_date": "2026-02-10",
+        "scope": "校园地贷款对象、流程与同一学年贷款择一规则",
+        "quoted_excerpt": "国家助学贷款根据经办银行不同分生源地/校园地；同一学年只能选择其中一种。"
+      },
+      {
+        "source_name": "教育部网站（财教〔2024〕188号）",
+        "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1779/202411/t20241104_1160686.html",
+        "doc_title": "关于调整完善国家助学贷款有关政策的通知",
+        "doc_no": "财教〔2024〕188号",
+        "published_date": "2024-10-31",
+        "verified_date": "2026-02-10",
+        "scope": "国家层面额度与利率调整",
+        "quoted_excerpt": "本专科每年不超过20000元、研究生不超过25000元；利率LPR减70bp。"
+      }
+    ]
+  },
+  {
+    "card_id": "TJ-GRANT-SCHOOL-2019",
+    "title": "同济大学校级助学金（含“大学生成才助学金”等）",
+    "short_title": "校级助学金",
+    "priority": "P1",
+    "level": "tongji",
+    "region": "同济大学",
+    "province": null,
+    "stage": [
+      "after_enrollment"
+    ],
+    "category": "grant",
+    "education_level": [
+      "undergrad"
+    ],
+    "tags": [
+      "校级助学金",
+      "大学生成才助学金",
+      "困难生"
+    ],
+    "eligible_text": "经学校认定的助学成才服务对象（本科生为主），可申请校级助学金（如本科生校级助学金、大学生成才助学金等，具体以当年通知为准）。",
+    "requires_financial_assessment": true,
+    "benefit_summary": "校级助学金为困难生提供及时经济支持；大学生成才助学金标准与名额按学校当年预算与分配确定（以当年通知为准）。",
+    "benefit_money_min": null,
+    "benefit_money_max": null,
+    "benefit_coverage": [
+      "living"
+    ],
+    "benefit_frequency": "按学年申请与评审",
+    "stacking_rules": "与国家助学金等项目的叠加/互斥以当年通知与细则为准。",
+    "application_window_text": "通常每学年按学院通知开展评选（示例通知：2025-2026学年评选）。",
+    "application_steps": [
+      "先完成“助学成才服务对象认定”。",
+      "关注学院发布的校级助学金/大学生成才助学金评选通知，按要求提交申请。",
+      "学院初审与公示，学校审核后确定名单并发放/资助。"
+    ],
+    "apply_portals": [
+      {
+        "name": "同济党委学工部：助学金简介（校级助学金/大学生成才助学金）",
+        "url": "https://student.tongji.edu.cn/xszz/zxj.htm"
+      },
+      {
+        "name": "同济大学信息公开网：大学生成才助学金评定细则（2019修正）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11610&newsid=12373&t=show"
+      },
+      {
+        "name": "评选通知示例：2025-2026学年校级助学金/大学生成才助学金",
+        "url": "https://caup.tongji.edu.cn/7a/5a/c33752a359002/page.htm"
+      }
+    ],
+    "materials": [
+      "按当年通知（通常含申请表、认定结果与相关佐证材料）"
+    ],
+    "processing_time": "按学院评审与学校审核周期执行",
+    "contact": "学院学工办/学生处资助业务",
+    "tongji_mapping_text": "安徽生源学生：若家庭经济困难，建议把校级助学金作为“国家助学金之外”的补充渠道，尤其在国家名额有限或需要持续支持时。",
+    "risk_notes": "不同学院名额与评审节奏可能不同；以学校/学院当年通知为准。",
+    "status": "needs_review",
+    "valid_from": null,
+    "valid_to": null,
+    "last_updated": "2026-02-10",
+    "change_note": "校级助学金类型与当年名额标准需每学年复核。",
+    "evidence_list": [
+      {
+        "source_name": "同济大学党委学生工作部（学生资助）",
+        "url": "https://student.tongji.edu.cn/xszz/zxj.htm",
+        "doc_title": "助学金简介（国家/校级/社会捐赠助学金分类）",
+        "doc_no": null,
+        "published_date": "2025-11-10",
+        "verified_date": "2026-02-10",
+        "scope": "说明同济助学金来源分类与项目数量",
+        "quoted_excerpt": "助学金分为国家助学金、校级助学金和社会捐赠助学金；校级助学金含本科生校级助学金、大学生成才助学金等。"
+      },
+      {
+        "source_name": "同济大学信息公开网（学生处）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11610&newsid=12373&t=show",
+        "doc_title": "同济大学大学生成才助学金评定细则（2019年修正）",
+        "doc_no": null,
+        "published_date": "2019-09-01",
+        "verified_date": "2026-02-10",
+        "scope": "大学生成才助学金对象、原则、评审流程与标准确定方式",
+        "quoted_excerpt": "资助对象：经认定的助学成才服务对象；资助标准按当年预算与人数确定；按学年申请和评审。"
+      },
+      {
+        "source_name": "同济大学建筑与城市规划学院（通知示例）",
+        "url": "https://caup.tongji.edu.cn/7a/5a/c33752a359002/page.htm",
+        "doc_title": "关于2025-2026学年本科生校级助学金、大学生成才助学金评选通知",
+        "doc_no": null,
+        "published_date": "2025-10-??",
+        "verified_date": "2026-02-10",
+        "scope": "学院通知示例（用于理解当年评选组织方式；具体以各学院通知为准）",
+        "quoted_excerpt": "资助对象：经学校认定的助学成才服务对象；评选办法参照大学生成才助学金评定细则。"
+      }
+    ]
+  },
+  {
+    "card_id": "TJ-AWARD-DONATION-2023",
+    "title": "社会捐赠冠名奖学金/助学金（同济）",
+    "short_title": "社会捐赠奖助",
+    "priority": "P1",
+    "level": "tongji",
+    "region": "同济大学",
+    "province": null,
+    "stage": [
+      "after_enrollment"
+    ],
+    "category": "award",
+    "education_level": [
+      "undergrad",
+      "master",
+      "phd"
+    ],
+    "tags": [
+      "社会捐赠",
+      "冠名奖学金",
+      "助学金",
+      "评审"
+    ],
+    "eligible_text": "同济设有多项社会捐赠奖助项目；具体对象与条件由学校/捐赠项目细则与当年通知确定（可能包含困难生助学金、优秀学生奖学金等）。",
+    "requires_financial_assessment": null,
+    "benefit_summary": "社会捐赠项目数量多、类型多样（奖学金/助学金），为学生提供额外支持与激励；具体金额与名额以当年项目公告为准。",
+    "benefit_money_min": null,
+    "benefit_money_max": null,
+    "benefit_coverage": [
+      "other",
+      "living"
+    ],
+    "benefit_frequency": "通常按学年评审",
+    "stacking_rules": "与国家/校级项目兼得规则以当年通知与项目细则为准。",
+    "application_window_text": "随学年评奖评优安排开展（通常秋季学期），以学院/学校通知为准。",
+    "application_steps": [
+      "关注学校/学院奖学金与助学金通知（含捐赠冠名项目）。",
+      "按通知在校内系统提交申请与材料（部分项目可能需额外表格/推荐）。",
+      "学院评审、公示与学校审核；按项目要求发放/资助。"
+    ],
+    "apply_portals": [
+      {
+        "name": "同济党委学工部：助学金简介（40余项社会捐赠助学金）",
+        "url": "https://student.tongji.edu.cn/xszz/zxj.htm"
+      },
+      {
+        "name": "学院通知示例：含校外捐赠冠名奖学金材料说明",
+        "url": "https://caup.tongji.edu.cn/35/cd/c33140a341453/page.htm"
+      },
+      {
+        "name": "同济大学信息公开网：学生奖励管理办法（制度依据入口）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11611&newsid=20849&t=show"
+      }
+    ],
+    "materials": [
+      "按当年通知与具体项目要求（成绩、成果、推荐意见、家庭困难材料等）"
+    ],
+    "processing_time": "按学院评审与学校审核周期执行",
+    "contact": "学院学生工作办公室/学生处；具体项目也可能有对接老师",
+    "tongji_mapping_text": "安徽生源学生：建议把“捐赠冠名奖助”作为国家项目之外的补充机会，尤其对综合表现突出或需要发展支持的同学；材料准备与截止日期很关键。",
+    "risk_notes": "不要向任何个人/机构支付“保证获奖费用”；以学校公示为准。",
+    "status": "needs_review",
+    "valid_from": null,
+    "valid_to": null,
+    "last_updated": "2026-02-10",
+    "change_note": "捐赠项目清单与条件需每学年跟随学校通知更新。",
+    "evidence_list": [
+      {
+        "source_name": "同济大学党委学生工作部（学生资助）",
+        "url": "https://student.tongji.edu.cn/xszz/zxj.htm",
+        "doc_title": "助学金简介（含社会捐赠助学金数量说明）",
+        "doc_no": null,
+        "published_date": "2025-11-10",
+        "verified_date": "2026-02-10",
+        "scope": "说明社会捐赠助学金数量与分类",
+        "quoted_excerpt": "同济设有40余项社会捐赠助学金（以页面说明为准）。"
+      },
+      {
+        "source_name": "同济大学建筑与城市规划学院（通知示例）",
+        "url": "https://caup.tongji.edu.cn/35/cd/c33140a341453/page.htm",
+        "doc_title": "关于2023—2024学年本科生第二批奖学金评审工作的通知（含捐赠冠名奖学金说明附件）",
+        "doc_no": null,
+        "published_date": "2024-??-??",
+        "verified_date": "2026-02-10",
+        "scope": "学院层面‘校外捐赠冠名奖学金’材料与认定说明示例",
+        "quoted_excerpt": "通知附有《关于本科校外捐赠冠名奖学金等级认定的说明》等附件。"
+      },
+      {
+        "source_name": "同济大学信息公开网",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11611&newsid=20849&t=show",
+        "doc_title": "同济大学学生奖励管理办法（2025年12月26日修正）",
+        "doc_no": null,
+        "published_date": "2025-12-29",
+        "verified_date": "2026-02-10",
+        "scope": "校内奖励管理制度依据入口",
+        "quoted_excerpt": "信息公开条目：学生奖励管理办法（2025修正）。"
+      }
+    ]
+  },
+  {
+    "card_id": "TJ-OTHER-DEVELOPMENT-2021",
+    "title": "同济大学发展型/成长型资助育人项目（训练营、励志评选、国际交流奖助等）",
+    "short_title": "发展型资助",
+    "priority": "P1",
+    "level": "tongji",
+    "region": "同济大学",
+    "province": null,
+    "stage": [
+      "after_enrollment"
+    ],
+    "category": "other",
+    "education_level": [
+      "undergrad",
+      "master",
+      "phd"
+    ],
+    "tags": [
+      "发展型资助",
+      "成长型资助",
+      "训练营",
+      "励志之星",
+      "国际交流"
+    ],
+    "eligible_text": "重点面向家庭经济困难学生的综合发展需求；具体项目对象与报名方式以学校当年项目通知为准。",
+    "requires_financial_assessment": true,
+    "benefit_summary": "除经济保障外，提供训练营、励志评选、交流研学、国际交流奖助金、学业帮扶等发展支持（以学校项目安排为准）。",
+    "benefit_money_min": null,
+    "benefit_money_max": null,
+    "benefit_coverage": [
+      "other"
+    ],
+    "benefit_frequency": "按项目/按学年开展",
+    "stacking_rules": "与奖助贷勤等经济型资助并行；具体项目可能有额外条件。",
+    "application_window_text": "按学校资助育人项目年度安排报名（以当年通知为准）。",
+    "application_steps": [
+      "完成困难认定（如项目要求）。",
+      "关注学校资助育人项目通知（训练营、励志之星、国际交流奖助等）。",
+      "按项目要求报名、提交材料并参加选拔/培训。"
+    ],
+    "apply_portals": [
+      {
+        "name": "同济大学信息公开网：资助育人体系简介（2021年版）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11610&newsid=12369&t=show"
+      },
+      {
+        "name": "同济党委学工部：资助政策简介入口",
+        "url": "https://student.tongji.edu.cn/xszz/zzzc.htm"
+      }
+    ],
+    "materials": [
+      "按具体项目要求（可能含报名表、证明材料、成果材料等）"
+    ],
+    "processing_time": "按项目安排",
+    "contact": "学生处资助育人项目对接老师/学院学工办（以当年通知为准）",
+    "tongji_mapping_text": "安徽生源学生：网站可把这些项目作为同济特色亮点；对外宣讲时强调“资助不止给钱，还给机会”，并在每个子项目下挂官方通知链接。",
+    "risk_notes": "项目名额与时间不固定，需依赖当年通知；避免把项目宣传成‘必然可获得’。",
+    "status": "needs_review",
+    "valid_from": null,
+    "valid_to": null,
+    "last_updated": "2026-02-10",
+    "change_note": "建议作为专题卡/集合卡，后续可拆分为子项目卡。",
+    "evidence_list": [
+      {
+        "source_name": "同济大学信息公开网（学生处）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11610&newsid=12369&t=show",
+        "doc_title": "同济大学资助育人体系简介（2021年版）",
+        "doc_no": null,
+        "published_date": "2021-08-01",
+        "verified_date": "2026-02-10",
+        "scope": "同济发展型/成长型资助育人平台与项目示例",
+        "quoted_excerpt": "提到新生成长训练营、励志之星评选、出境游学、国际交流奖助金等。"
+      }
+    ]
+  },
+  {
+    "card_id": "TJ-COMP-GRASSROOTS-2024",
+    "title": "基层就业学费补偿 / 国家助学贷款代偿（同济）",
+    "short_title": "基层就业代偿",
+    "priority": "P1",
+    "level": "national",
+    "region": "全国/同济大学",
+    "province": null,
+    "stage": [
+      "graduation"
+    ],
+    "category": "compensation",
+    "education_level": [
+      "undergrad",
+      "master",
+      "phd"
+    ],
+    "tags": [
+      "基层就业",
+      "学费补偿",
+      "贷款代偿",
+      "就业"
+    ],
+    "eligible_text": "符合国家基层就业政策要求的应届毕业生（中央高校毕业生到中西部/艰苦边远/老工业基地等县以下基层单位就业并满足服务年限等要求；以当年政策为准）。",
+    "requires_financial_assessment": false,
+    "benefit_summary": "对符合条件者补偿在校期间实际缴纳学费或代偿用于学费的国家助学贷款（含本金及利息）；自2024年秋季学期起标准与国家助学贷款额度联动（本专科每年最高20000元、研究生每年最高25000元）。",
+    "benefit_money_min": null,
+    "benefit_money_max": null,
+    "benefit_coverage": [
+      "tuition",
+      "loan"
+    ],
+    "benefit_frequency": "通常按年确认/分年补偿（以当年政策为准）",
+    "stacking_rules": "与其他专项政策关系以当年规定为准。",
+    "application_window_text": "毕业当年按学校通知与国家系统要求申报（以当年安排为准）。",
+    "application_steps": [
+      "毕业前关注学校发布的基层就业补偿/代偿通知与申报要求。",
+      "按要求提交就业协议/劳动合同及基层单位证明等材料。",
+      "按政策要求在岗确认（通常需年度确认），直至完成补偿/代偿。"
+    ],
+    "apply_portals": [
+      {
+        "name": "同济党委学工部：基层就业学费补偿贷款代偿简介",
+        "url": "https://student.tongji.edu.cn/info/1886/2128.htm"
+      },
+      {
+        "name": "教育部/财政部等：国家助学贷款政策调整（代偿标准联动）",
+        "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1779/202411/t20241104_1160686.html"
+      }
+    ],
+    "materials": [
+      "就业协议/劳动合同、单位性质与地点证明、在岗证明等（以当年政策与学校通知为准）"
+    ],
+    "processing_time": "按国家审核流程与学校审核周期",
+    "contact": "学校就业指导中心/学生处资助业务（以当年通知为准）",
+    "tongji_mapping_text": "安徽生源学生：如果毕业回安徽或去中西部基层就业，可提前在大四上学期了解政策条件与材料，避免错过毕业当年申报。",
+    "risk_notes": "基层单位范围与服务年限是关键；务必以国家与学校当年政策为准。",
+    "status": "needs_review",
+    "valid_from": "2024-09-01",
+    "valid_to": null,
+    "last_updated": "2026-02-10",
+    "change_note": "金额上限与贷款政策联动，需按当年政策核验服务年限与范围细则。",
+    "evidence_list": [
+      {
+        "source_name": "同济大学党委学生工作部（学生资助）",
+        "url": "https://student.tongji.edu.cn/info/1886/2128.htm",
+        "doc_title": "基层就业学费补偿贷款代偿简介",
+        "doc_no": null,
+        "published_date": "2025-11-10",
+        "verified_date": "2026-02-10",
+        "scope": "同济对基层就业补偿/代偿政策的简介与标准说明",
+        "quoted_excerpt": "自2024年秋季学期起，学费补偿/贷款代偿标准：本科每年最高不超过20000元，研究生每年最高不超过25000元。"
+      },
+      {
+        "source_name": "教育部网站（财教〔2024〕188号）",
+        "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1779/202411/t20241104_1160686.html",
+        "doc_title": "关于调整完善国家助学贷款有关政策的通知",
+        "doc_no": "财教〔2024〕188号",
+        "published_date": "2024-10-31",
+        "verified_date": "2026-02-10",
+        "scope": "国家层面明确代偿标准与贷款额度联动",
+        "quoted_excerpt": "贷款额度调整后，基层就业学费补偿/贷款代偿标准相应调整为本专科20000元、研究生25000元（上限）。"
+      }
+    ]
+  },
+  {
+    "card_id": "AH-LOAN-REPAY-2025",
+    "title": "生源地助学贷款毕业后还款（安徽国开行：还本宽限期、贴息等）",
+    "short_title": "贷款还款安排",
+    "priority": "P1",
+    "level": "local",
+    "region": "安徽",
+    "province": "anhui",
+    "stage": [
+      "graduation"
+    ],
+    "category": "loan",
+    "education_level": [
+      "undergrad",
+      "master",
+      "phd"
+    ],
+    "tags": [
+      "还款",
+      "宽限期",
+      "贴息",
+      "征信"
+    ],
+    "eligible_text": "已办理国家开发银行生源地信用助学贷款的借款学生（安徽）。",
+    "requires_financial_assessment": true,
+    "benefit_summary": "在读期间利息由财政补贴；毕业后按政策进入还款阶段，5年还本宽限期内一般只需偿还利息；继续攻读学位可按规定申请继续贴息（以当年政策为准）。",
+    "benefit_money_min": null,
+    "benefit_money_max": null,
+    "benefit_coverage": [
+      "loan"
+    ],
+    "benefit_frequency": "毕业后按月/按合同还款",
+    "stacking_rules": "如申请基层就业代偿/服兵役代偿，按国家规定执行并与贷款合同衔接。",
+    "application_window_text": "毕业前后按合同与县资助中心/银行要求办理还款确认；继续升学需在规定期限内提交证明申请贴息（示例：毕业当年7月31日前）。",
+    "application_steps": [
+      "毕业离校前：按学校/银行要求完成还款确认与联系方式更新。",
+      "毕业后：按合同约定按月还息，进入还本宽限期与本金偿还阶段（按政策/合同）。",
+      "继续升学：按规定向县级资助中心提交证明申请继续贴息。",
+      "如遇还款困难：及时联系经办机构咨询政策（避免逾期影响征信）。"
+    ],
+    "apply_portals": [
+      {
+        "name": "安徽指南（县政府转载）：还款政策与逾期提示",
+        "url": "https://www.ahjinzhai.gov.cn/zwzx/gsgg/37913963.html"
+      },
+      {
+        "name": "国开行学生在线系统（查询合同/还款计划）",
+        "url": "https://sls.cdb.com.cn/"
+      }
+    ],
+    "materials": [
+      "按合同与经办机构要求（如升学证明、联系方式变更等）"
+    ],
+    "processing_time": "按经办机构审核与系统办理",
+    "contact": "国开行服务热线95593；县级学生资助管理中心电话见当年指南",
+    "tongji_mapping_text": "到同济毕业阶段：按学校离校手续要求完成贷款毕业确认/信息更新；如计划申请基层就业代偿或入伍资助，应提前与学校资助部门确认材料与系统申报节点。",
+    "risk_notes": "逾期会影响个人征信并保留不良记录；务必留意还款账单与联系方式更新。",
+    "status": "verified",
+    "valid_from": null,
+    "valid_to": null,
+    "last_updated": "2026-02-10",
+    "change_note": "还款与征信风险提示作为毕业阶段必备卡片。",
+    "evidence_list": [
+      {
+        "source_name": "金寨县人民政府（转载安徽省教育厅/县教育局）",
+        "url": "https://www.ahjinzhai.gov.cn/zwzx/gsgg/37913963.html",
+        "doc_title": "2025年安徽省国家开发银行生源地信用助学贷款办理指南（还款政策）",
+        "doc_no": null,
+        "published_date": "2025-06-12",
+        "verified_date": "2026-02-10",
+        "scope": "包含还款政策、升学贴息申请期限、逾期征信提示等",
+        "quoted_excerpt": "在5年还本宽限期内只需偿还利息；继续攻读学位需于毕业当年7月31日前申请继续贴息；逾期将影响征信。"
+      }
+    ]
+  },
+  {
+    "card_id": "TJ-WAIVER-MILITARY-2023",
+    "title": "服兵役学生国家教育资助（学费补偿/贷款代偿/学费减免）",
+    "short_title": "服兵役教育资助",
+    "priority": "P1",
+    "level": "national",
+    "region": "全国/同济大学",
+    "province": null,
+    "stage": [
+      "pre_admission",
+      "after_enrollment",
+      "graduation"
+    ],
+    "category": "waiver",
+    "education_level": [
+      "undergrad",
+      "master",
+      "phd"
+    ],
+    "tags": [
+      "服兵役",
+      "学费减免",
+      "学费补偿",
+      "贷款代偿",
+      "退役复学"
+    ],
+    "eligible_text": "应征入伍服义务兵役、招收为军士的高校学生；入伍前在校生/新生、退役复学或入学学生等（以国家政策与同济实施细则为准）。",
+    "requires_financial_assessment": false,
+    "benefit_summary": "入伍时可对在校期间缴纳学费实行一次性补偿或对用于学费的国家助学贷款实行代偿；退役后复学/入学可享受学费减免等支持（以政策为准）。",
+    "benefit_money_min": null,
+    "benefit_money_max": null,
+    "benefit_coverage": [
+      "tuition",
+      "loan"
+    ],
+    "benefit_frequency": "按入伍/复学节点办理",
+    "stacking_rules": "国家助学贷款额度调整后，服兵役学费补偿/贷款代偿/学费减免标准上限与贷款额度联动（本专科20000元、研究生25000元，按当年政策）。",
+    "application_window_text": "按入伍或退役复学/入学节点办理；具体申报时间以学校与征兵系统通知为准。",
+    "application_steps": [
+      "入伍前：向学校资助部门咨询并按要求准备表格与材料（以当年通知）。",
+      "服役期间：按规定保留学籍或入学资格。",
+      "退役后复学/入学：按学校流程办理学费减免，并注意复学期间不得再申请国家助学贷款（以学校说明为准）。"
+    ],
+    "apply_portals": [
+      {
+        "name": "同济党委学工部：学费减免简介（含复学期间不得再申请助学贷款提示）",
+        "url": "https://student.tongji.edu.cn/xszz/xfjm.htm"
+      },
+      {
+        "name": "同济大学信息公开网：服兵役学生国家教育资助实施细则（2023版）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11610&newsid=17902&t=show"
+      },
+      {
+        "name": "教育部：国家助学贷款政策调整（代偿标准联动）",
+        "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1779/202411/t20241104_1160686.html"
+      }
+    ],
+    "materials": [
+      "入伍/退役相关证明材料、学费缴纳凭证、贷款合同信息等（以实施细则为准）"
+    ],
+    "processing_time": "按学校审核与相关部门流程",
+    "contact": "学校学生处资助部门/武装部（以当年通知为准）",
+    "tongji_mapping_text": "安徽生源学生：若计划入伍或退役后入学/复学，同济有明确学费减免与资助实施细则；建议在入伍前就与学校资助部门确认材料与节点，避免错过申报。",
+    "risk_notes": "复学期间不得再申请国家助学贷款等限制要提前知晓并规划资金。",
+    "status": "needs_review",
+    "valid_from": null,
+    "valid_to": null,
+    "last_updated": "2026-02-10",
+    "change_note": "信息公开条目可能包含附件内容加载问题，需后续二次核验细则全文。",
+    "evidence_list": [
+      {
+        "source_name": "同济大学党委学生工作部（学生资助）",
+        "url": "https://student.tongji.edu.cn/xszz/xfjm.htm",
+        "doc_title": "学费减免简介",
+        "doc_no": null,
+        "published_date": "2025-11-10",
+        "verified_date": "2026-02-10",
+        "scope": "同济对服兵役学费补偿/代偿/减免的简介与重要限制提示",
+        "quoted_excerpt": "退役复学期间不得再申请国家助学贷款；入伍时可补偿学费或代偿贷款。"
+      },
+      {
+        "source_name": "同济大学信息公开网（学生处）",
+        "url": "https://xxgk.tongji.edu.cn/index.php?classid=11610&newsid=17902&t=show",
+        "doc_title": "同济大学服兵役学生国家教育资助实施细则（2023版）",
+        "doc_no": null,
+        "published_date": "2024-01-11",
+        "verified_date": "2026-02-10",
+        "scope": "同济校内实施细则入口（需后续打开附件核验全文）",
+        "quoted_excerpt": "信息公开条目：服兵役学生国家教育资助实施细则（2023版）。"
+      },
+      {
+        "source_name": "教育部网站（财教〔2024〕188号）",
+        "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1779/202411/t20241104_1160686.html",
+        "doc_title": "关于调整完善国家助学贷款有关政策的通知",
+        "doc_no": "财教〔2024〕188号",
+        "published_date": "2024-10-31",
+        "verified_date": "2026-02-10",
+        "scope": "明确服兵役学费补偿/代偿/减免标准上限与贷款额度联动",
+        "quoted_excerpt": "贷款额度调整后，服兵役学生学费补偿/贷款代偿/学费减免标准相应调整。"
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ActionPlanBuilder from '../components/ActionPlanBuilder';
+import { getCardsByProvince } from '../utils/data';
+import type { BenefitCoverage, Stage } from '../types';
+
+const cards = getCardsByProvince('anhui');
+
+const identityParam = Astro.url.searchParams.get('identity') ?? '';
+const concernParam = Astro.url.searchParams.get('concern') ?? '';
+
+const validStages: Stage[] = ['pre_admission', 'enrollment_day', 'after_enrollment', 'graduation'];
+const validConcerns: BenefitCoverage[] = ['tuition', 'accommodation', 'living', 'fees', 'other'];
+
+const initialIdentity = validStages.includes(identityParam as Stage) ? identityParam : '';
+const initialConcern = validConcerns.includes(concernParam as BenefitCoverage) ? concernParam : '';
+---
+
+<BaseLayout title="行动清单">
+  <h1 class="text-2xl font-bold mb-2">行动清单生成器</h1>
+  <p class="text-gray-600 mb-6">
+    回答几个问题，生成属于你的资助行动清单。可复制文本转发给家长或老师。
+  </p>
+  <ActionPlanBuilder
+    client:load
+    cards={cards}
+    initialIdentity={initialIdentity}
+    initialConcern={initialConcern}
+  />
+</BaseLayout>

@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AnhuiHub from '../components/AnhuiHub';
+import { policyCards } from '../utils/data';
+
+/* policies 页展示全站所有卡片，安徽优先 */
+const sorted = [...policyCards].sort((a, b) => {
+  if (a.province === 'anhui' && b.province !== 'anhui') return -1;
+  if (b.province === 'anhui' && a.province !== 'anhui') return 1;
+  return 0;
+});
+---
+
+<BaseLayout title="政策项目库">
+  <h1 class="text-2xl font-bold mb-2">政策项目库</h1>
+  <p class="text-gray-600 mb-6">
+    全站政策项目检索。支持按类别、身份、费用等维度筛选，安徽相关项目优先显示。
+  </p>
+  <AnhuiHub client:load cards={sorted} />
+</BaseLayout>

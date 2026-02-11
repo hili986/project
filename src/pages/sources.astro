@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { sourceSites } from '../utils/data';
+
+/* 按 scope_level 分组 */
+const groups: Record<string, typeof sourceSites> = {};
+for (const site of sourceSites) {
+  const key = site.scope_level;
+  if (!groups[key]) groups[key] = [];
+  groups[key].push(site);
+}
+
+const groupLabels: Record<string, string> = {
+  national: '国家级',
+  province: '省级（安徽）',
+  school: '同济大学',
+  bank: '银行/经办行',
+};
+
+const groupOrder = ['national', 'province', 'school', 'bank'];
+---
+
+<BaseLayout title="来源与声明">
+  <h1 class="text-2xl font-bold mb-2">来源与声明</h1>
+  <p class="text-gray-600 mb-6">
+    本站所有政策信息均来源于以下官方网站或文件。以官方发布为准，本站提供对接式解读与路径建议。
+  </p>
+
+  {groupOrder.map((key) => {
+    const sites = groups[key];
+    if (!sites || sites.length === 0) return null;
+    return (
+      <section class="mb-8">
+        <h2 class="text-lg font-bold mb-3 border-b pb-1">{groupLabels[key] || key}</h2>
+        <div class="space-y-3">
+          {sites.map((site) => (
+            <div class="p-3 border rounded-lg text-sm">
+              <div class="flex items-baseline gap-2">
+                <span class="font-medium text-gray-900">{site.name}</span>
+                <span class="text-xs text-gray-500">{site.region}</span>
+                <span class={`text-xs px-1.5 py-0.5 rounded ${site.priority === 'P0' ? 'bg-red-100 text-red-700' : 'bg-gray-100 text-gray-600'}`}>
+                  {site.priority}
+                </span>
+              </div>
+              {site.homepage_url && (
+                <a
+                  href={site.homepage_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-blue-700 hover:underline text-xs mt-1 inline-block"
+                >
+                  {site.homepage_url}
+                </a>
+              )}
+              {site.update_frequency && (
+                <p class="text-xs text-gray-500 mt-1">建议核验频率：{site.update_frequency}</p>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+    );
+  })}
+
+  <section class="mt-8 p-4 bg-gray-50 border rounded-lg text-sm text-gray-600">
+    <h2 class="font-bold text-gray-800 mb-2">免责声明</h2>
+    <p>以官方发布为准；本站提供对接式解读与路径建议；所有条款请以来源链接核验。</p>
+    <p class="mt-1">本站不代表任何官方机构。如遇诈骗信息请立即报警。</p>
+  </section>
+</BaseLayout>

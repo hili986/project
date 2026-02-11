@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import DisclaimerFooter from '../../components/DisclaimerFooter.astro';
+import AnhuiHub from '../../components/AnhuiHub';
+import { getCardsByProvince } from '../../utils/data';
+
+const cards = getCardsByProvince('anhui');
+---
+
+<BaseLayout title="安徽专区">
+  {/* 页面头 */}
+  <div class="space-y-2 mb-6">
+    <h1 class="text-2xl font-bold">安徽专区</h1>
+    <p class="text-gray-600">
+      安徽生源地资助政策与同济大学校内资助体系的对接导航。按时间轴浏览，筛选你关心的项目。
+    </p>
+    <div class="flex flex-wrap gap-3 text-sm">
+      <a
+        href="https://student.tongji.edu.cn/xszz.htm"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-blue-700 hover:underline"
+      >
+        同济大学学生资助中心
+      </a>
+      <a
+        href="https://www.cdb.com.cn"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-blue-700 hover:underline"
+      >
+        国家开发银行助学贷款
+      </a>
+    </div>
+  </div>
+
+  {/* 核心交互区（React island） */}
+  <AnhuiHub client:load cards={cards} />
+
+  {/* 风险提示 */}
+  <DisclaimerFooter />
+</BaseLayout>

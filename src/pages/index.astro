@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { changelogEntries, policyCards } from '../utils/data';
+import { getMaxVerifiedDate } from '../utils/date';
+
+const maxDate = getMaxVerifiedDate(policyCards);
+const latestChanges = changelogEntries.slice(0, 3);
+---
+
+<BaseLayout title="首页">
+  {/* 价值主张 */}
+  <section class="text-center py-10 space-y-4">
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-900">
+      安徽资助政策 × 同济大学对接导航
+    </h1>
+    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+      用时间轴告诉你：能办什么、何时办、去哪办、到同济怎么对接。一键生成你的行动清单。
+    </p>
+    <a
+      href="/p/anhui"
+      class="inline-block px-8 py-3 bg-blue-700 text-white font-semibold rounded-lg hover:bg-blue-800 transition text-lg"
+    >
+      进入安徽专区
+    </a>
+  </section>
+
+  {/* 快捷入口 */}
+  <section class="grid sm:grid-cols-3 gap-4 my-8">
+    <a href="/policies?category=loan" class="p-5 border rounded-lg hover:shadow-md hover:border-blue-300 transition text-center">
+      <span class="text-3xl">💰</span>
+      <h3 class="font-bold mt-2">助学贷款</h3>
+      <p class="text-sm text-gray-500 mt-1">生源地贷款办理全流程</p>
+    </a>
+    <a href="/policy/TJ-CHANNEL-GREEN-2025" class="p-5 border rounded-lg hover:shadow-md hover:border-blue-300 transition text-center">
+      <span class="text-3xl">🏫</span>
+      <h3 class="font-bold mt-2">绿色通道</h3>
+      <p class="text-sm text-gray-500 mt-1">报到当天交不起学费怎么办</p>
+    </a>
+    <a href="/_/plan" class="p-5 border rounded-lg hover:shadow-md hover:border-blue-300 transition text-center">
+      <span class="text-3xl">📋</span>
+      <h3 class="font-bold mt-2">行动清单</h3>
+      <p class="text-sm text-gray-500 mt-1">根据你的情况生成待办事项</p>
+    </a>
+  </section>
+
+  {/* 严谨性说明 */}
+  <section class="my-8 p-6 bg-gray-50 border rounded-lg">
+    <h2 class="font-bold text-lg mb-3">我们如何保证严谨</h2>
+    <div class="grid sm:grid-cols-3 gap-4 text-sm text-gray-700">
+      <div>
+        <p class="font-medium text-gray-900">证据链</p>
+        <p>每条政策都附官方文件来源、文号与链接。</p>
+      </div>
+      <div>
+        <p class="font-medium text-gray-900">核验日期</p>
+        <p>所有信息标注人工核验日期，最后核验：{maxDate}。</p>
+      </div>
+      <div>
+        <p class="font-medium text-gray-900">更新日志</p>
+        <p>每次变更公开透明，可在<a href="/changelog" class="text-blue-700 hover:underline">更新日志</a>查看。</p>
+      </div>
+    </div>
+  </section>
+
+  {/* 最新更新 */}
+  {latestChanges.length > 0 && (
+    <section class="my-8">
+      <h2 class="font-bold text-lg mb-3">最新更新</h2>
+      <ul class="space-y-2">
+        {latestChanges.map((entry) => (
+          <li class="flex gap-3 text-sm">
+            <span class="text-gray-400 shrink-0">{entry.date}</span>
+            <span class="text-gray-700">{entry.summary}</span>
+          </li>
+        ))}
+      </ul>
+      <a href="/changelog" class="text-sm text-blue-700 hover:underline mt-2 inline-block">
+        查看全部更新 &rarr;
+      </a>
+    </section>
+  )}
+</BaseLayout>

@@ -1,0 +1,86 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = '安徽生源地资助政策与同济大学校内资助体系对接导航' } = Astro.props;
+
+const navItems = [
+  { href: '/', label: '首页' },
+  { href: '/p/anhui', label: '安徽专区' },
+  { href: '/policies', label: '政策项目库' },
+  { href: '/_/plan', label: '行动清单' },
+  { href: '/faq', label: 'FAQ' },
+  { href: '/glossary', label: '术语' },
+  { href: '/sources', label: '来源' },
+  { href: '/changelog', label: '更新日志' },
+];
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title} | 同济资助导航</title>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    {/* ── 顶部导航 ── */}
+    <header class="bg-blue-900 text-white sticky top-0 z-50">
+      <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="/" class="font-bold text-lg whitespace-nowrap">同济资助导航</a>
+        <ul class="hidden md:flex gap-4 text-sm flex-wrap">
+          {navItems.map((item) => (
+            <li>
+              <a href={item.href} class="hover:text-blue-200 transition-colors">
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+        {/* 移动端菜单按钮 */}
+        <details class="md:hidden relative">
+          <summary class="cursor-pointer list-none p-2">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </summary>
+          <ul class="absolute right-0 mt-2 bg-blue-800 rounded shadow-lg py-2 min-w-[160px]">
+            {navItems.map((item) => (
+              <li>
+                <a href={item.href} class="block px-4 py-2 hover:bg-blue-700 text-sm">
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </details>
+      </nav>
+    </header>
+
+    {/* ── 主体内容 ── */}
+    <main class="flex-1 max-w-6xl mx-auto px-4 py-6 w-full">
+      <slot />
+    </main>
+
+    {/* ── 页脚 ── */}
+    <footer class="bg-gray-100 border-t mt-auto">
+      <div class="max-w-6xl mx-auto px-4 py-6 text-sm text-gray-600 space-y-3">
+        <p class="font-medium text-gray-700">
+          免责声明：以官方发布为准；本站提供对接式解读与路径建议；所有条款请以来源链接核验。
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="/sources" class="text-blue-700 hover:underline">来源与声明</a>
+          <a href="/feedback" class="text-blue-700 hover:underline">反馈纠错</a>
+          <a href="/changelog" class="text-blue-700 hover:underline">更新日志</a>
+        </div>
+        <p class="text-xs text-gray-400">本站不代表任何官方机构。如遇诈骗信息请立即报警。</p>
+      </div>
+    </footer>
+  </body>
+</html>

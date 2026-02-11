@@ -65,6 +65,14 @@ export default function AnhuiHub({ cards }: Props) {
   const [filters, setFilters] = useState<Filters>(DEFAULT_FILTERS);
   const filtered = useMemo(() => applyFilters(cards, filters), [cards, filters]);
   const maxDate = useMemo(() => getMaxVerifiedDate(filtered), [filtered]);
+  const planHref = useMemo(() => {
+    if (filtered.length >= cards.length) return '/plan';
+    const params = new URLSearchParams();
+    if (filters.identity) params.set('identity', filters.identity);
+    if (filters.concern) params.set('concern', filters.concern);
+    const query = params.toString();
+    return query ? `/plan?${query}` : '/plan';
+  }, [cards.length, filtered.length, filters.concern, filters.identity]);
 
   /* 按时间轴分组 */
   const grouped = useMemo(() => {
@@ -117,7 +125,7 @@ export default function AnhuiHub({ cards }: Props) {
       {/* 行动清单入口 */}
       <div className="text-center py-4">
         <a
-          href={`/_/plan${filtered.length < cards.length ? `?identity=${filters.identity}&concern=${filters.concern}` : ''}`}
+          href={planHref}
           className="inline-block px-6 py-3 bg-blue-700 text-white font-medium rounded-lg hover:bg-blue-800 transition"
         >
           生成我的行动清单

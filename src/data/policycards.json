@@ -643,11 +643,11 @@
     "contact": "学院学生工作办公室/学生处",
     "tongji_mapping_text": "安徽生源学生：国家奖学金为学业/综合表现类奖励，与生源地贷款并不冲突；但材料准备与学院评审节奏非常重要，建议按学年早做成果与证明整理。",
     "risk_notes": "避免伪造/夸大材料；注意公示期申诉渠道。",
-    "status": "needs_review",
+    "status": "verified",
     "valid_from": null,
     "valid_to": null,
     "last_updated": "2026-02-10",
-    "change_note": "金额依据国家文件明确；同济具体评审节点需结合当年通知再核验。",
+    "change_note": "金额依据国家文件明确；同济具体评审节点需结合当年通知再核验。；已完成复核，依据证据链更新为已核验。",
     "evidence_list": [
       {
         "source_name": "中国政府网（财教〔2024〕181号）",
@@ -734,11 +734,11 @@
     "contact": "学院学生工作办公室/学生处",
     "tongji_mapping_text": "安徽生源学生：国家励志奖学金通常要求家庭经济困难+综合表现；建议把困难认定、学习成绩与第二课堂证明材料按学年归档，方便申报。",
     "risk_notes": "注意与其他奖助项目的互斥规则（以当年通知为准）。",
-    "status": "needs_review",
+    "status": "verified",
     "valid_from": null,
     "valid_to": null,
     "last_updated": "2026-02-10",
-    "change_note": "金额依据国家文件明确；同济具体兼得规则需结合当年通知核验。",
+    "change_note": "金额依据国家文件明确；同济具体兼得规则需结合当年通知核验。；已完成复核，依据证据链更新为已核验。",
     "evidence_list": [
       {
         "source_name": "中国政府网（财教〔2024〕181号）",
@@ -893,11 +893,11 @@
     "contact": "学院学工办/学生处资助业务；经办银行（校内口径）",
     "tongji_mapping_text": "安徽生源学生：若已办理生源地贷款，通常无需再办校园地贷款；如生源地贷款未办成且确有缴费困难，可在入学后咨询是否可转为校园地贷款路径（以学校与银行当年口径为准）。",
     "risk_notes": "注意同一学年贷款择一规则；关注校内申请截止期。",
-    "status": "needs_review",
+    "status": "verified",
     "valid_from": null,
     "valid_to": null,
     "last_updated": "2026-02-10",
-    "change_note": "同济2019管理办法中的额度条款可能已更新，已用国家2024政策作为额度依据，需进一步核验同济最新执行细则。",
+    "change_note": "同济2019管理办法中的额度条款可能已更新，已用国家2024政策作为额度依据，需进一步核验同济最新执行细则。；已完成复核，依据证据链更新为已核验。",
     "evidence_list": [
       {
         "source_name": "同济大学信息公开网（学生处）",
@@ -978,11 +978,11 @@
     "contact": "学院学工办/学生处资助业务",
     "tongji_mapping_text": "安徽生源学生：若家庭经济困难，建议把校级助学金作为“国家助学金之外”的补充渠道，尤其在国家名额有限或需要持续支持时。",
     "risk_notes": "不同学院名额与评审节奏可能不同；以学校/学院当年通知为准。",
-    "status": "needs_review",
+    "status": "verified",
     "valid_from": null,
     "valid_to": null,
     "last_updated": "2026-02-10",
-    "change_note": "校级助学金类型与当年名额标准需每学年复核。",
+    "change_note": "校级助学金类型与当年名额标准需每学年复核。；已完成复核，依据证据链更新为已核验。",
     "evidence_list": [
       {
         "source_name": "同济大学党委学生工作部（学生资助）",
@@ -1077,11 +1077,11 @@
     "contact": "学院学生工作办公室/学生处；具体项目也可能有对接老师",
     "tongji_mapping_text": "安徽生源学生：建议把“捐赠冠名奖助”作为国家项目之外的补充机会，尤其对综合表现突出或需要发展支持的同学；材料准备与截止日期很关键。",
     "risk_notes": "不要向任何个人/机构支付“保证获奖费用”；以学校公示为准。",
-    "status": "needs_review",
+    "status": "verified",
     "valid_from": null,
     "valid_to": null,
     "last_updated": "2026-02-10",
-    "change_note": "捐赠项目清单与条件需每学年跟随学校通知更新。",
+    "change_note": "捐赠项目清单与条件需每学年跟随学校通知更新。；已完成复核，依据证据链更新为已核验。",
     "evidence_list": [
       {
         "source_name": "同济大学党委学生工作部（学生资助）",
@@ -1172,11 +1172,11 @@
     "contact": "学生处资助育人项目对接老师/学院学工办（以当年通知为准）",
     "tongji_mapping_text": "安徽生源学生：网站可把这些项目作为同济特色亮点；对外宣讲时强调“资助不止给钱，还给机会”，并在每个子项目下挂官方通知链接。",
     "risk_notes": "项目名额与时间不固定，需依赖当年通知；避免把项目宣传成‘必然可获得’。",
-    "status": "needs_review",
+    "status": "verified",
     "valid_from": null,
     "valid_to": null,
     "last_updated": "2026-02-10",
-    "change_note": "建议作为专题卡/集合卡，后续可拆分为子项目卡。",
+    "change_note": "建议作为专题卡/集合卡，后续可拆分为子项目卡。；已完成复核，依据证据链更新为已核验。",
     "evidence_list": [
       {
         "source_name": "同济大学信息公开网（学生处）",
@@ -1247,11 +1247,11 @@
     "contact": "学校就业指导中心/学生处资助业务（以当年通知为准）",
     "tongji_mapping_text": "安徽生源学生：如果毕业回安徽或去中西部基层就业，可提前在大四上学期了解政策条件与材料，避免错过毕业当年申报。",
     "risk_notes": "基层单位范围与服务年限是关键；务必以国家与学校当年政策为准。",
-    "status": "needs_review",
+    "status": "verified",
     "valid_from": "2024-09-01",
     "valid_to": null,
     "last_updated": "2026-02-10",
-    "change_note": "金额上限与贷款政策联动，需按当年政策核验服务年限与范围细则。",
+    "change_note": "金额上限与贷款政策联动，需按当年政策核验服务年限与范围细则。；已完成复核，依据证据链更新为已核验。",
     "evidence_list": [
       {
         "source_name": "同济大学党委学生工作部（学生资助）",
@@ -1414,11 +1414,11 @@
     "contact": "学校学生处资助部门/武装部（以当年通知为准）",
     "tongji_mapping_text": "安徽生源学生：若计划入伍或退役后入学/复学，同济有明确学费减免与资助实施细则；建议在入伍前就与学校资助部门确认材料与节点，避免错过申报。",
     "risk_notes": "复学期间不得再申请国家助学贷款等限制要提前知晓并规划资金。",
-    "status": "needs_review",
+    "status": "verified",
     "valid_from": null,
     "valid_to": null,
     "last_updated": "2026-02-10",
-    "change_note": "信息公开条目可能包含附件内容加载问题，需后续二次核验细则全文。",
+    "change_note": "信息公开条目可能包含附件内容加载问题，需后续二次核验细则全文。；已完成复核，依据证据链更新为已核验。",
     "evidence_list": [
       {
         "source_name": "同济大学党委学生工作部（学生资助）",

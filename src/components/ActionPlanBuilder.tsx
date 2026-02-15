@@ -1,18 +1,31 @@
-import { useState, useMemo } from 'react';
-import type { PolicyCard, Stage } from '../types';
+import { useEffect, useState, useMemo } from 'react';
+import type { BenefitCoverage, PolicyCard, Stage } from '../types';
 import { STAGE_LABELS, STAGE_ORDER, CATEGORY_LABELS } from '../types';
 
 interface Props {
   cards: PolicyCard[];
-  initialIdentity?: string;
-  initialConcern?: string;
 }
 
-export default function ActionPlanBuilder({ cards, initialIdentity = '', initialConcern = '' }: Props) {
-  const [identity, setIdentity] = useState(initialIdentity);
-  const [concern, setConcern] = useState(initialConcern);
+const VALID_STAGES: Stage[] = ['pre_admission', 'enrollment_day', 'after_enrollment', 'graduation'];
+const VALID_CONCERNS: BenefitCoverage[] = ['tuition', 'accommodation', 'living', 'fees', 'other'];
+
+export default function ActionPlanBuilder({ cards }: Props) {
+  const [identity, setIdentity] = useState('');
+  const [concern, setConcern] = useState('');
   const [generated, setGenerated] = useState(false);
   const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const identityParam = params.get('identity') ?? '';
+    const concernParam = params.get('concern') ?? '';
+
+    const nextIdentity = VALID_STAGES.includes(identityParam as Stage) ? identityParam : '';
+    const nextConcern = VALID_CONCERNS.includes(concernParam as BenefitCoverage) ? concernParam : '';
+
+    setIdentity(nextIdentity);
+    setConcern(nextConcern);
+  }, []);
 
   const filtered = useMemo(() => {
     return cards.filter((c) => {

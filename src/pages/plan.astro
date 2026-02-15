@@ -2,18 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ActionPlanBuilder from '../components/ActionPlanBuilder';
 import { getCardsByProvince } from '../utils/data';
-import type { BenefitCoverage, Stage } from '../types';
 
 const cards = getCardsByProvince('anhui');
-
-const identityParam = Astro.url.searchParams.get('identity') ?? '';
-const concernParam = Astro.url.searchParams.get('concern') ?? '';
-
-const validStages: Stage[] = ['pre_admission', 'enrollment_day', 'after_enrollment', 'graduation'];
-const validConcerns: BenefitCoverage[] = ['tuition', 'accommodation', 'living', 'fees', 'other'];
-
-const initialIdentity = validStages.includes(identityParam as Stage) ? identityParam : '';
-const initialConcern = validConcerns.includes(concernParam as BenefitCoverage) ? concernParam : '';
 ---
 
 <BaseLayout title="行动清单">
@@ -24,7 +14,5 @@ const initialConcern = validConcerns.includes(concernParam as BenefitCoverage) ?
   <ActionPlanBuilder
     client:load
     cards={cards}
-    initialIdentity={initialIdentity}
-    initialConcern={initialConcern}
   />
 </BaseLayout>

@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { BASE } from '../utils/base';
 
 interface Props {
   title: string;
@@ -9,18 +10,18 @@ interface Props {
 const { title, description = '安徽生源地资助政策与同济大学校内资助体系对接导航' } = Astro.props;
 
 const primaryNav = [
-  { href: '/', label: '首页' },
-  { href: '/p/anhui', label: '安徽专区' },
-  { href: '/policies', label: '政策项目库' },
-  { href: '/_/plan', label: '行动清单' },
+  { href: `${BASE}/`, label: '首页' },
+  { href: `${BASE}/p/anhui`, label: '安徽专区' },
+  { href: `${BASE}/policies`, label: '政策项目库' },
+  { href: `${BASE}/_/plan`, label: '行动清单' },
 ];
 
 const secondaryNav = [
-  { href: '/faq', label: '常见问题' },
-  { href: '/glossary', label: '术语解释' },
-  { href: '/sources', label: '来源与声明' },
-  { href: '/changelog', label: '更新日志' },
-  { href: '/feedback', label: '反馈纠错' },
+  { href: `${BASE}/faq`, label: '常见问题' },
+  { href: `${BASE}/glossary`, label: '术语解释' },
+  { href: `${BASE}/sources`, label: '来源与声明' },
+  { href: `${BASE}/changelog`, label: '更新日志' },
+  { href: `${BASE}/feedback`, label: '反馈纠错' },
 ];
 ---
 
@@ -33,14 +34,14 @@ const secondaryNav = [
     <meta property="og:title" content={`${title} | 同济资助导航`} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={`${BASE}/favicon.svg`} />
     <title>{title} | 同济资助导航</title>
   </head>
   <body class="min-h-screen flex flex-col">
     {/* ── Header ── */}
     <header class="bg-blue-900 text-white sticky top-0 z-50">
       <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="/" class="font-bold text-lg whitespace-nowrap">同济资助导航</a>
+        <a href={`${BASE}/`} class="font-bold text-lg whitespace-nowrap">同济资助导航</a>
 
         {/* Desktop nav */}
         <ul class="hidden md:flex items-center gap-4 text-sm">
@@ -103,9 +104,9 @@ const secondaryNav = [
           免责声明：以官方发布为准；本站提供对接式解读与路径建议；所有条款请以来源链接核验。
         </p>
         <div class="flex flex-wrap gap-4">
-          <a href="/sources" class="text-blue-700 hover:underline">来源与声明</a>
-          <a href="/feedback" class="text-blue-700 hover:underline">反馈纠错</a>
-          <a href="/changelog" class="text-blue-700 hover:underline">更新日志</a>
+          <a href={`${BASE}/sources`} class="text-blue-700 hover:underline">来源与声明</a>
+          <a href={`${BASE}/feedback`} class="text-blue-700 hover:underline">反馈纠错</a>
+          <a href={`${BASE}/changelog`} class="text-blue-700 hover:underline">更新日志</a>
         </div>
         <p class="text-xs text-gray-400">本站不代表任何官方机构。如遇诈骗信息请立即报警。</p>
       </div>

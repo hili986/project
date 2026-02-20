@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import StatusBadge from '../../components/StatusBadge.astro';
 import EvidencePanel from '../../components/EvidencePanel.astro';
 import MappingBlock from '../../components/MappingBlock.astro';
+import { BASE } from '../../utils/base';
 import { policyCards } from '../../utils/data';
 import { CATEGORY_LABELS, LEVEL_LABELS } from '../../types';
 import type { PolicyCard } from '../../types';
@@ -158,8 +159,8 @@ for (const ev of card.evidence_list) {
 
   {/* 返回导航 */}
   <div class="mt-8 pt-4 border-t flex flex-wrap gap-3 text-sm">
-    <a href="/p/anhui" class="text-blue-700 hover:underline">&larr; 返回安徽专区</a>
-    <a href="/policies" class="text-blue-700 hover:underline">政策项目库</a>
-    <a href={`/feedback?card_id=${card.card_id}`} class="text-blue-700 hover:underline">反馈纠错</a>
+    <a href={`${BASE}/p/anhui`} class="text-blue-700 hover:underline">&larr; 返回安徽专区</a>
+    <a href={`${BASE}/policies`} class="text-blue-700 hover:underline">政策项目库</a>
+    <a href={`${BASE}/feedback?card_id=${card.card_id}`} class="text-blue-700 hover:underline">反馈纠错</a>
   </div>
 </BaseLayout>

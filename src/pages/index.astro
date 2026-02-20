@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { BASE } from '../utils/base';
 import { changelogEntries, policyCards, sourceSites } from '../utils/data';
 import { getMaxVerifiedDate } from '../utils/date';
 import { STAGE_ORDER, STAGE_LABELS } from '../types';
@@ -53,7 +54,7 @@ const stageShortLabels: Record<Stage, string> = {
       用时间轴告诉你：能办什么、何时办、去哪办、到同济怎么对接。
     </p>
     <a
-      href="/p/anhui"
+      href={`${BASE}/p/anhui`}
       class="inline-block px-8 py-3 bg-blue-700 text-white font-semibold rounded-lg hover:bg-blue-800 transition text-lg"
     >
       进入安徽专区
@@ -67,7 +68,7 @@ const stageShortLabels: Record<Stage, string> = {
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
       {STAGE_ORDER.map((stage) => (
         <a
-          href={`/p/anhui?stage=${stage}`}
+          href={`${BASE}/p/anhui?stage=${stage}`}
           class="group block p-4 border rounded-lg hover:shadow-md hover:border-blue-400 transition text-center space-y-2"
         >
           <span class="text-3xl block">{stageIcons[stage]}</span>
@@ -85,17 +86,17 @@ const stageShortLabels: Record<Stage, string> = {
 
   {/* ── Quick Scenarios ── */}
   <section class="grid sm:grid-cols-3 gap-4 my-8">
-    <a href="/policies?category=loan" class="p-5 border rounded-lg hover:shadow-md hover:border-blue-300 transition text-center">
+    <a href={`${BASE}/policies?category=loan`} class="p-5 border rounded-lg hover:shadow-md hover:border-blue-300 transition text-center">
       <span class="text-3xl block mb-2">{'\u{1F4B0}'}</span>
       <h3 class="font-bold">办助学贷款</h3>
       <p class="text-sm text-gray-500 mt-1">生源地贷款办理全流程</p>
     </a>
-    <a href="/policy/TJ-CHANNEL-GREEN-2025" class="p-5 border rounded-lg hover:shadow-md hover:border-blue-300 transition text-center">
+    <a href={`${BASE}/policy/TJ-CHANNEL-GREEN-2025`} class="p-5 border rounded-lg hover:shadow-md hover:border-blue-300 transition text-center">
       <span class="text-3xl block mb-2">{'\u{1F3EB}'}</span>
       <h3 class="font-bold">绿色通道</h3>
       <p class="text-sm text-gray-500 mt-1">报到当天交不起学费怎么办</p>
     </a>
-    <a href="/_/plan" class="p-5 border rounded-lg hover:shadow-md hover:border-blue-300 transition text-center">
+    <a href={`${BASE}/_/plan`} class="p-5 border rounded-lg hover:shadow-md hover:border-blue-300 transition text-center">
       <span class="text-3xl block mb-2">{'\u{1F4CB}'}</span>
       <h3 class="font-bold">行动清单</h3>
       <p class="text-sm text-gray-500 mt-1">根据你的情况生成待办事项</p>
@@ -109,7 +110,7 @@ const stageShortLabels: Record<Stage, string> = {
       <span><strong class="text-gray-900">{sourceSites.length}</strong> 个官方来源</span>
       <span>最后核验：<strong class="text-gray-900">{maxDate}</strong></span>
     </div>
-    <a href="/sources" class="text-blue-700 hover:underline">查看全部来源 &rarr;</a>
+    <a href={`${BASE}/sources`} class="text-blue-700 hover:underline">查看全部来源 &rarr;</a>
   </section>
 
   {/* ── Latest Changes ── */}
@@ -124,7 +125,7 @@ const stageShortLabels: Record<Stage, string> = {
           </li>
         ))}
       </ul>
-      <a href="/changelog" class="text-sm text-blue-700 hover:underline mt-2 inline-block">
+      <a href={`${BASE}/changelog`} class="text-sm text-blue-700 hover:underline mt-2 inline-block">
         查看全部更新 &rarr;
       </a>
     </section>

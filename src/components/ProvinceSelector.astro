@@ -1,4 +1,5 @@
 ---
+import { BASE } from '../utils/base';
 import { provinces } from '../utils/data';
 
 const sorted = [...provinces].sort((a, b) => a.order - b.order);
@@ -9,7 +10,7 @@ const sorted = [...provinces].sort((a, b) => a.order - b.order);
   <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
     {sorted.map((prov) => (
       <a
-        href={`/p/${prov.slug}`}
+        href={`${BASE}/p/${prov.slug}`}
         class="block p-4 border rounded-lg hover:bg-blue-50 hover:border-blue-400 transition text-center"
       >
         <span class="text-lg font-medium">{prov.name}</span>

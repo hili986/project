@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import type { PolicyCard, Stage, Level, Status } from '../types';
 import { STAGE_LABELS, STAGE_ORDER } from '../types';
 import { getMaxVerifiedDate } from '../utils/date';
+import { BASE } from '../utils/base';
 import FilterBar, { DEFAULT_FILTERS, type Filters } from './FilterBar';
 import PolicyCardItem from './PolicyCardItem';
 
@@ -72,7 +73,7 @@ export default function PolicyExplorer({
   showTimeline = true,
   extendedMode = false,
   initialFilters = {},
-  planHrefBase = '/_/plan',
+  planHrefBase = `${BASE}/_/plan`,
 }: Props) {
   const [filters, setFilters] = useState<Filters>({ ...DEFAULT_FILTERS, ...initialFilters });
   const filtered = useMemo(() => applyFilters(cards, filters), [cards, filters]);

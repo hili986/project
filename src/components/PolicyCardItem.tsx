@@ -1,5 +1,6 @@
 import type { PolicyCard } from '../types';
 import { CATEGORY_LABELS, LEVEL_LABELS, STATUS_LABELS, BENEFIT_COVERAGE_LABELS } from '../types';
+import { BASE } from '../utils/base';
 
 interface Props {
   card: PolicyCard;
@@ -16,7 +17,7 @@ const statusColors: Record<string, string> = {
 export default function PolicyCardItem({ card }: Props) {
   return (
     <a
-      href={`/policy/${card.card_id}`}
+      href={`${BASE}/policy/${card.card_id}`}
       className="block p-4 border rounded-lg hover:shadow-md hover:border-blue-300 transition bg-white"
     >
       <div className="flex items-start justify-between gap-2">

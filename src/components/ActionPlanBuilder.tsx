@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import type { PolicyCard, Stage } from '../types';
 import { STAGE_LABELS, STAGE_ORDER, CATEGORY_LABELS } from '../types';
+import { BASE } from '../utils/base';
 
 interface Props {
   cards: PolicyCard[];
@@ -177,7 +178,7 @@ export default function ActionPlanBuilder({ cards, initialIdentity = '', initial
         <div className="p-4 bg-blue-50 border border-blue-200 rounded-lg">
           <p className="text-sm text-gray-700">
             已选择 <strong>{filtered.length}</strong> 个项目生成行动清单。
-            <a href="/_/plan" className="text-blue-700 hover:underline ml-2">重新选择</a>
+            <a href={`${BASE}/_/plan`} className="text-blue-700 hover:underline ml-2">重新选择</a>
           </p>
         </div>
       )}
@@ -194,7 +195,7 @@ export default function ActionPlanBuilder({ cards, initialIdentity = '', initial
                 {stageCards.map((c) => (
                   <div key={c.card_id} className="p-3 border rounded bg-white text-sm space-y-1">
                     <div className="font-medium text-gray-900">
-                      <a href={`/policy/${c.card_id}`} className="text-blue-700 hover:underline">
+                      <a href={`${BASE}/policy/${c.card_id}`} className="text-blue-700 hover:underline">
                         {c.title}
                       </a>
                       <span className="text-gray-500 ml-2">（{CATEGORY_LABELS[c.category]}）</span>

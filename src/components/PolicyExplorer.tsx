@@ -73,7 +73,7 @@ export default function PolicyExplorer({
   showTimeline = true,
   extendedMode = false,
   initialFilters = {},
-  planHrefBase = `${BASE}/_/plan`,
+  planHrefBase = `${BASE}/plan`,
 }: Props) {
   const [filters, setFilters] = useState<Filters>({ ...DEFAULT_FILTERS, ...initialFilters });
   const filtered = useMemo(() => applyFilters(cards, filters), [cards, filters]);

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { BASE } from '../utils/base';
 import { faqs } from '../utils/data';
 ---
 
@@ -22,6 +23,6 @@ import { faqs } from '../utils/data';
     <p class="text-gray-500">暂无常见问题，敬请期待。</p>
   )}
   <p class="mt-8 text-sm text-gray-500">
-    找不到你的问题？<a href="/feedback" class="text-blue-700 hover:underline">提交反馈</a>，我们会尽快补充。
+    找不到你的问题？<a href={`${BASE}/feedback`} class="text-blue-700 hover:underline">提交反馈</a>，我们会尽快补充。
   </p>
 </BaseLayout>

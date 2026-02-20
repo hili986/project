@@ -178,7 +178,7 @@ export default function ActionPlanBuilder({ cards, initialIdentity = '', initial
         <div className="p-4 bg-blue-50 border border-blue-200 rounded-lg">
           <p className="text-sm text-gray-700">
             已选择 <strong>{filtered.length}</strong> 个项目生成行动清单。
-            <a href={`${BASE}/_/plan`} className="text-blue-700 hover:underline ml-2">重新选择</a>
+            <a href={`${BASE}/plan`} className="text-blue-700 hover:underline ml-2">重新选择</a>
           </p>
         </div>
       )}

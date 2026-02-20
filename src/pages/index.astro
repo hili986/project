@@ -85,7 +85,9 @@ const stageShortLabels: Record<Stage, string> = {
   </section>
 
   {/* ── Quick Scenarios ── */}
-  <section class="grid sm:grid-cols-3 gap-4 my-8">
+  <section class="my-8">
+    <h2 class="text-lg font-bold text-center mb-4">推荐访问</h2>
+    <div class="grid sm:grid-cols-3 gap-4">
     <a href={`${BASE}/policies?category=loan`} class="p-5 border rounded-lg hover:shadow-md hover:border-blue-300 transition text-center">
       <span class="text-3xl block mb-2">{'\u{1F4B0}'}</span>
       <h3 class="font-bold">办助学贷款</h3>
@@ -101,6 +103,7 @@ const stageShortLabels: Record<Stage, string> = {
       <h3 class="font-bold">行动清单</h3>
       <p class="text-sm text-gray-500 mt-1">根据你的情况生成待办事项</p>
     </a>
+    </div>
   </section>
 
   {/* ── Trust Indicator Bar ── */}

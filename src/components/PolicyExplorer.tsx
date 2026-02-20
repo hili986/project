@@ -116,7 +116,7 @@ export default function PolicyExplorer({
           {STAGE_ORDER.map((stage) => {
             const stageCards = grouped.get(stage) || [];
             return (
-              <section key={stage} className="space-y-3">
+              <section key={stage} id={`stage-${stage}`} className="space-y-3 scroll-mt-20">
                 <div className="flex items-center gap-3 p-3 bg-white border-l-4 border-blue-600 rounded shadow-sm">
                   <span className="text-2xl">{stageIcons[stage]}</span>
                   <div className="flex-1">

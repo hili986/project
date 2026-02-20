@@ -68,7 +68,7 @@ const stageShortLabels: Record<Stage, string> = {
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
       {STAGE_ORDER.map((stage) => (
         <a
-          href={`${BASE}/p/anhui?stage=${stage}`}
+          href={`${BASE}/p/anhui?stage=${stage}#stage-${stage}`}
           class="group block p-4 border rounded-lg hover:shadow-md hover:border-blue-400 transition text-center space-y-2"
         >
           <span class="text-3xl block">{stageIcons[stage]}</span>

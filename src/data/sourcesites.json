@@ -1,0 +1,98 @@
+[
+  {
+    "source_id": "src-金寨县人民政府转载安徽省教育厅县教育局",
+    "name": "金寨县人民政府（转载安徽省教育厅/县教育局）",
+    "scope_level": "province",
+    "region": "安徽",
+    "homepage_url": "https://www.ahjinzhai.gov.cn/",
+    "policy_index_urls": [],
+    "contact_urls": [],
+    "update_frequency": "每学期",
+    "priority": "P0",
+    "notes": "由证据链自动生成，需人工补齐政策目录页与联系方式。"
+  },
+  {
+    "source_id": "src-教育部网站财教2024188号",
+    "name": "教育部网站（财教〔2024〕188号）",
+    "scope_level": "national",
+    "region": "全国",
+    "homepage_url": "https://www.moe.gov.cn/",
+    "policy_index_urls": [],
+    "contact_urls": [],
+    "update_frequency": "不定期",
+    "priority": "P1",
+    "notes": "由证据链自动生成，需人工补齐政策目录页与联系方式。"
+  },
+  {
+    "source_id": "src-同济大学党委学生工作部学生资助",
+    "name": "同济大学党委学生工作部（学生资助）",
+    "scope_level": "school",
+    "region": "同济大学",
+    "homepage_url": "https://student.tongji.edu.cn/",
+    "policy_index_urls": [],
+    "contact_urls": [],
+    "update_frequency": "每学期",
+    "priority": "P0",
+    "notes": "由证据链自动生成，需人工补齐政策目录页与联系方式。"
+  },
+  {
+    "source_id": "src-同济大学信息公开网财务处",
+    "name": "同济大学信息公开网（财务处）",
+    "scope_level": "school",
+    "region": "同济大学",
+    "homepage_url": "https://xxgk.tongji.edu.cn/",
+    "policy_index_urls": [],
+    "contact_urls": [],
+    "update_frequency": "每学期",
+    "priority": "P0",
+    "notes": "由证据链自动生成，需人工补齐政策目录页与联系方式。"
+  },
+  {
+    "source_id": "src-同济大学信息公开网学生处",
+    "name": "同济大学信息公开网（学生处）",
+    "scope_level": "school",
+    "region": "同济大学",
+    "homepage_url": "https://xxgk.tongji.edu.cn/",
+    "policy_index_urls": [],
+    "contact_urls": [],
+    "update_frequency": "每学期",
+    "priority": "P0",
+    "notes": "由证据链自动生成，需人工补齐政策目录页与联系方式。"
+  },
+  {
+    "source_id": "src-中国政府网财教2024181号",
+    "name": "中国政府网（财教〔2024〕181号）",
+    "scope_level": "national",
+    "region": "全国",
+    "homepage_url": "https://www.gov.cn/",
+    "policy_index_urls": [],
+    "contact_urls": [],
+    "update_frequency": "不定期",
+    "priority": "P1",
+    "notes": "由证据链自动生成，需人工补齐政策目录页与联系方式。"
+  },
+  {
+    "source_id": "src-同济大学信息公开网",
+    "name": "同济大学信息公开网",
+    "scope_level": "school",
+    "region": "同济大学",
+    "homepage_url": "https://xxgk.tongji.edu.cn/",
+    "policy_index_urls": [],
+    "contact_urls": [],
+    "update_frequency": "每学期",
+    "priority": "P0",
+    "notes": "由证据链自动生成，需人工补齐政策目录页与联系方式。"
+  },
+  {
+    "source_id": "src-同济大学建筑与城市规划学院通知示例",
+    "name": "同济大学建筑与城市规划学院（通知示例）",
+    "scope_level": "school",
+    "region": "同济大学",
+    "homepage_url": "https://caup.tongji.edu.cn/",
+    "policy_index_urls": [],
+    "contact_urls": [],
+    "update_frequency": "每学期",
+    "priority": "P0",
+    "notes": "由证据链自动生成，需人工补齐政策目录页与联系方式。"
+  }
+]

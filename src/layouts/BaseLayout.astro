@@ -1,0 +1,124 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = '安徽生源地资助政策与同济大学校内资助体系对接导航' } = Astro.props;
+
+const primaryNav = [
+  { href: '/', label: '首页' },
+  { href: '/p/anhui', label: '安徽专区' },
+  { href: '/policies', label: '政策项目库' },
+  { href: '/_/plan', label: '行动清单' },
+];
+
+const secondaryNav = [
+  { href: '/faq', label: '常见问题' },
+  { href: '/glossary', label: '术语解释' },
+  { href: '/sources', label: '来源与声明' },
+  { href: '/changelog', label: '更新日志' },
+  { href: '/feedback', label: '反馈纠错' },
+];
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={`${title} | 同济资助导航`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title} | 同济资助导航</title>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    {/* ── Header ── */}
+    <header class="bg-blue-900 text-white sticky top-0 z-50">
+      <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="/" class="font-bold text-lg whitespace-nowrap">同济资助导航</a>
+
+        {/* Desktop nav */}
+        <ul class="hidden md:flex items-center gap-4 text-sm">
+          {primaryNav.map((item) => (
+            <li>
+              <a href={item.href} class="hover:text-blue-200 transition-colors">{item.label}</a>
+            </li>
+          ))}
+          {/* "More" dropdown */}
+          <li class="relative group">
+            <button class="hover:text-blue-200 transition-colors flex items-center gap-1">
+              更多
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <ul class="absolute right-0 top-full mt-1 bg-blue-800 rounded shadow-lg py-1 min-w-[140px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-50">
+              {secondaryNav.map((item) => (
+                <li>
+                  <a href={item.href} class="block px-4 py-2 hover:bg-blue-700 text-sm">{item.label}</a>
+                </li>
+              ))}
+            </ul>
+          </li>
+        </ul>
+
+        {/* Mobile menu */}
+        <details id="mobile-menu" class="md:hidden relative">
+          <summary class="cursor-pointer list-none p-2">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </summary>
+          <ul class="absolute right-0 mt-2 bg-blue-800 rounded shadow-lg py-2 min-w-[180px] z-50">
+            {primaryNav.map((item) => (
+              <li>
+                <a href={item.href} class="mobile-nav-link block px-4 py-2 hover:bg-blue-700 text-sm">{item.label}</a>
+              </li>
+            ))}
+            <li class="border-t border-blue-700 my-1"></li>
+            {secondaryNav.map((item) => (
+              <li>
+                <a href={item.href} class="mobile-nav-link block px-4 py-2 hover:bg-blue-700 text-sm text-blue-200">{item.label}</a>
+              </li>
+            ))}
+          </ul>
+        </details>
+      </nav>
+    </header>
+
+    {/* ── Main ── */}
+    <main class="flex-1 max-w-6xl mx-auto px-4 py-6 w-full">
+      <slot />
+    </main>
+
+    {/* ── Footer ── */}
+    <footer class="bg-gray-100 border-t mt-auto">
+      <div class="max-w-6xl mx-auto px-4 py-6 text-sm text-gray-600 space-y-3">
+        <p class="font-medium text-gray-700">
+          免责声明：以官方发布为准；本站提供对接式解读与路径建议；所有条款请以来源链接核验。
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="/sources" class="text-blue-700 hover:underline">来源与声明</a>
+          <a href="/feedback" class="text-blue-700 hover:underline">反馈纠错</a>
+          <a href="/changelog" class="text-blue-700 hover:underline">更新日志</a>
+        </div>
+        <p class="text-xs text-gray-400">本站不代表任何官方机构。如遇诈骗信息请立即报警。</p>
+      </div>
+    </footer>
+
+    {/* Mobile menu: close on link click */}
+    <script>
+      document.querySelectorAll('.mobile-nav-link').forEach((link) => {
+        link.addEventListener('click', () => {
+          const menu = document.getElementById('mobile-menu');
+          if (menu) (menu as HTMLDetailsElement).open = false;
+        });
+      });
+    </script>
+  </body>
+</html>

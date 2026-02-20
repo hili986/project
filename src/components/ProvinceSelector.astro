@@ -1,0 +1,23 @@
+---
+import { provinces } from '../utils/data';
+
+const sorted = [...provinces].sort((a, b) => a.order - b.order);
+---
+
+<section class="space-y-4">
+  <h2 class="text-xl font-bold">选择省份</h2>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+    {sorted.map((prov) => (
+      <a
+        href={`/p/${prov.slug}`}
+        class="block p-4 border rounded-lg hover:bg-blue-50 hover:border-blue-400 transition text-center"
+      >
+        <span class="text-lg font-medium">{prov.name}</span>
+        <span class="block text-xs text-gray-500 mt-1">
+          {prov.aliases.join(' / ')}
+        </span>
+      </a>
+    ))}
+  </div>
+  <p class="text-sm text-gray-500">更多省份即将上线，敬请期待。</p>
+</section>

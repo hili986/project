@@ -1,0 +1,142 @@
+## 文档 2：内容与数据规范 Schema（数据就是单一可信源）
+
+> 目标：让内容可扩省、可审查、可版本化、可自动校验。
+
+### 1. 核心实体（Entities）
+1) **SourceSite（来源网站条目）**：你“来源网站清单表”的每一行  
+2) **PolicyCard（项目卡片）**：你“项目卡片主数据表”的每一行（网站最小内容单元）  
+3) **Province（省份）**：用于扩省、展示与路由  
+4) **Evidence（证据条目）**：每条政策引用的官方文件/页面（可一对多）  
+5) **Mapping（地区—同济对接映射）**：把地方办理动作对接到同济动作  
+6) **FAQ**：高频问题  
+7) **GlossaryTerm**：术语解释（资助/奖助贷勤补免偿/绿色通道等）  
+8) **ChangelogEntry**：更新日志（透明化）
+
+### 2. 全站“严谨性字段”强制规则（字段名以本节为唯一真值）
+**每个 PolicyCard 必须具备：**
+- `title`（项目名称）  
+- `level`（国家/地方/同济/银行）  
+- `region`（适用地区：安徽/全国/同济等）  
+- `category`（奖/助/贷/勤/补/免/偿/认定/通道）  
+- `eligible_text`（适用对象说明，必填）  
+- `requires_financial_assessment`（是否以家庭经济困难认定为前置：`true | false | null`；未知填 `null`）  
+- `benefit_summary`（你能拿到什么：覆盖费用与金额范围）  
+- `application_window_text`（申请时间/节点）  
+- `application_steps`（步骤列表；可以为空数组，但字段必须存在）  
+- `apply_portals`（入口列表；可以为空数组，但字段必须存在）  
+- `materials`（材料清单；可以为空数组，但字段必须存在）  
+- `tongji_mapping_text`（到同济后怎么对接；即便未知也必须写“待补齐+建议咨询入口”）  
+- `evidence_list`（至少 1 条证据：来源 URL + 发布机关/文号/发布日期 + 核验日期）  
+- `status`（草稿/已核验/需复核/已过期）  
+- `last_updated`（记录更新时间）
+
+**任何“数字/对象/窗口期”都必须能回链到 evidence。**  
+如果无法回链：标记 `status = needs_review`，并在页面显示“需复核”。
+
+### 3. 受控词表（Controlled Vocabulary）
+- `level`：`national | local | tongji | bank`（银行/经办行可单列）  
+- `category`：`award | grant | loan | workstudy | subsidy | waiver | compensation | assessment | channel | other`  
+- `stage`（时间轴段落）：`pre_admission | enrollment_day | after_enrollment | graduation`  
+- `education_level`：`undergrad | master | phd | vocational | other`  
+- `status`：`draft | verified | needs_review | expired | archived`  
+- `priority`：`P0 | P1 | P2`（先做安徽 P0）
+
+### 4. PolicyCard 字段建议（对应你表格，给到最完整）
+> 下面是“结构化优先、文本兜底”的设计：即使你暂时不知道怎么结构化，也能先填文本，后面再逐步结构化。
+
+**基础信息**
+- `card_id`：唯一 ID（建议：`AH-LOAN-CDB-YYYY` 类似规则）  
+- `title`：项目名称  
+- `short_title`：短名（卡片列表用）  
+- `level`：国家/地方/同济/银行  
+- `region`：例如 `安徽` / `全国` / `同济大学`  
+- `province`：`anhui`（用于路由；全国/同济可为空）  
+- `stage`：时间轴段落（可多选）  
+- `category`：奖助贷勤补免偿等  
+- `education_level`：学段（数组）  
+- `tags`：数组（如：`新生`、`困难认定`、`生源地贷款`、`绿色通道`）
+
+**适用对象（资格）**
+- `eligible_text`：一句话说明（必填）  
+- `requires_financial_assessment`：`true | false | null`（未知就填 null；不要省略字段）  
+- `eligible_structured`（可选）：  
+  - `household`：户籍/生源地条件  
+  - `identity`：特殊群体（可多选）  
+  - `academic`：成绩/评审条件（若有）
+
+**资助内容（收益）**
+- `benefit_summary`：核心收益一句话（必填）  
+- `benefit_money_min/max`：金额范围（可为空）  
+- `benefit_coverage`：`tuition | accommodation | living | fees | other` 多选  
+- `benefit_frequency`：一次性/每学期/每年/按月等  
+- `stacking_rules`：可叠加/互斥说明（必须标注“以官方为准”）
+
+**申请办理**
+- `application_window_text`：申请窗口期说明（必填）  
+- `application_steps`：步骤列表（1、2、3）  
+- `apply_portals`：入口列表（链接+名称）  
+- `materials`：材料清单（列表）  
+- `processing_time`：办理周期（如有）  
+- `contact`：咨询电话/部门（如有）
+
+**地区—同济对接（原创核心）**
+- `tongji_mapping_text`：到同济后怎么对接（必填：即便写“暂无统一入口，建议咨询学院”也要写）  
+- `tongji_actions`（可选，结构化）：  
+  - `system`：如“同济某系统模块”（未知就填“待补”）  
+  - `office`：学院/学工办/资助中心  
+  - `deadline`：同济侧截止时间（如有）  
+  - `proof_needed`：回执/证明类型  
+- `risk_notes`：常见误区与风险提示（如：不要相信代办、注意窗口期）
+
+**证据链（Evidence）**
+- `evidence_list`：数组，每个含：  
+  - `source_name`：发布机关/网站名  
+  - `url`：链接  
+  - `doc_title`：文件/页面标题  
+  - `doc_no`：文号（如有）  
+  - `published_date`：发布日期（如可得）  
+  - `quoted_excerpt`：最小必要摘录（可为空）  
+  - `verified_date`：你核验日期（必填）  
+  - `scope`：适用范围说明（如：适用某学年）
+
+**版本与状态**
+- `status`：draft/verified/needs_review/expired/archived  
+- `valid_from/to`：适用学年或有效期（可选）  
+- `last_updated`：记录更新时间（必填）  
+- `change_note`：变更说明（用于 changelog）
+
+### 5. SourceSite（来源网站清单）字段建议
+- `source_id`  
+- `name`（网站/机构名称）  
+- `scope_level`（国家/省/市/校/银行）  
+- `region`（安徽/全国/同济等）  
+- `homepage_url`  
+- `policy_index_urls`（政策目录页数组）  
+- `qa_urls`（问答页数组）  
+- `forms_urls`（表格下载页数组）  
+- `contact_urls`（联系方式）  
+- `update_frequency`（建议核验频率：月/学期/年）  
+- `priority`（P0-P2）  
+- `notes`（抓取建议字段、登录要求、是否稳定）
+
+### 6. Changelog（更新日志）规则
+每次更新至少记录：
+- 改了哪些卡片（IDs）  
+- 改动类型：金额/对象/窗口期/入口/材料/同济对接/证据更新  
+- 改动原因：官方通知更新/核验发现错误/补充证据  
+- 更新人、更新时间
+
+### 7. 内容生产流程（强建议写进规范）
+- **采集**：从 SourceSite 入口拿到官方页面/文件  
+- **拆卡**：按项目拆成 PolicyCard（先填文本字段也行）  
+- **证据绑定**：填 evidence（至少 1 条）  
+- **复核**：双人复核（或至少自检+二次核验）  
+- **发布**：status=verified 才在前台默认展示；needs_review/expired 有明显提示  
+- **定期复核**：安徽 P0 项目每学期复核；贷款类窗口期临近时增加复核频率
+
+### 8. 内容发布约定（Excel → JSON → validate → 发布）
+- **编辑端（人工录入）**：以 Excel/表格为主（来源网站清单表、项目卡片主数据表）。  
+- **发布端（网站读取）**：以 JSON 为唯一数据源（写入仓库，供构建与部署）。  
+- **转换**：将 Excel 导出为 CSV/JSON（或由脚本读取 xlsx），再生成符合本 Schema 的 JSON 文件。  
+- **校验**：每次发布前必须运行 `validate`：检查必填字段、ID 唯一、evidence 非空、受控词表合法。  
+- **发布**：校验通过后再提交到 Git 仓库并部署；任何对外展示的变更应写入 changelog。

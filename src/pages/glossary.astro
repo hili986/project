@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { glossaryTerms } from '../utils/data';
+---
+
+<BaseLayout title="术语解释">
+  <h1 class="text-2xl font-bold mb-6">术语解释</h1>
+  <p class="text-gray-600 mb-6">
+    资助相关术语说明。帮助你理解"奖助贷勤补免偿"及绿色通道等概念。
+  </p>
+  {glossaryTerms.length > 0 ? (
+    <dl class="space-y-4">
+      {glossaryTerms.map((term) => (
+        <div class="p-4 border rounded-lg">
+          <dt class="font-bold text-gray-900">{term.term}</dt>
+          <dd class="text-gray-700 text-sm mt-1">{term.definition}</dd>
+          {term.evidence && term.evidence.length > 0 && (
+            <dd class="mt-2 flex flex-wrap gap-2">
+              {term.evidence.map((ev) => (
+                <a
+                  href={ev.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-xs text-blue-700 hover:underline"
+                >
+                  {ev.source_name}{ev.doc_no ? `（${ev.doc_no}）` : ''} &rarr;
+                </a>
+              ))}
+            </dd>
+          )}
+        </div>
+      ))}
+    </dl>
+  ) : (
+    <p class="text-gray-500">暂无术语，敬请期待。</p>
+  )}
+</BaseLayout>

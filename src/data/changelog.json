@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2026-02-11",
+    "type": "init",
+    "summary": "安徽MVP首批项目卡与证据链入库",
+    "card_ids": [
+      "AH-LOAN-CDB-2025",
+      "TJ-CHANNEL-GREEN-2025",
+      "TJ-INFO-TUITION-2025",
+      "TJ-MAP-LOAN-RECEIPT-2025",
+      "TJ-ASSESSMENT-NEED-2023",
+      "TJ-SUBSIDY-TEMP-2023",
+      "TJ-GRANT-NATIONAL-2025",
+      "TJ-AWARD-NATIONAL-2024",
+      "TJ-AWARD-INSPIRATION-2024",
+      "TJ-WORKSTUDY-2023",
+      "TJ-LOAN-CAMPUS-2019",
+      "TJ-GRANT-SCHOOL-2019",
+      "TJ-AWARD-DONATION-2023",
+      "TJ-OTHER-DEVELOPMENT-2021",
+      "TJ-COMP-GRASSROOTS-2024",
+      "AH-LOAN-REPAY-2025",
+      "TJ-WAIVER-MILITARY-2023"
+    ]
+  }
+]

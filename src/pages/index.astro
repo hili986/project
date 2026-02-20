@@ -1,0 +1,132 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { changelogEntries, policyCards, sourceSites } from '../utils/data';
+import { getMaxVerifiedDate } from '../utils/date';
+import { STAGE_ORDER, STAGE_LABELS } from '../types';
+import type { Stage } from '../types';
+
+const maxDate = getMaxVerifiedDate(policyCards);
+const latestChanges = changelogEntries.slice(0, 3);
+
+/* count cards per stage for identity cards */
+const stageCounts: Record<Stage, number> = {
+  pre_admission: 0,
+  enrollment_day: 0,
+  after_enrollment: 0,
+  graduation: 0,
+};
+for (const card of policyCards) {
+  for (const s of card.stage) {
+    stageCounts[s]++;
+  }
+}
+
+const stageDescriptions: Record<Stage, string> = {
+  pre_admission: '入学前能办什么？贷款、入学资助...',
+  enrollment_day: '交不起学费怎么办？绿色通道...',
+  after_enrollment: '奖助贷勤补免偿，全面覆盖',
+  graduation: '贷款代偿、基层就业补偿...',
+};
+
+const stageIcons: Record<Stage, string> = {
+  pre_admission: '\u{1F4CB}',
+  enrollment_day: '\u{1F3EB}',
+  after_enrollment: '\u{1F4DA}',
+  graduation: '\u{1F393}',
+};
+
+const stageShortLabels: Record<Stage, string> = {
+  pre_admission: '志愿填报 / 高三',
+  enrollment_day: '新生报到',
+  after_enrollment: '在读学生',
+  graduation: '即将毕业',
+};
+---
+
+<BaseLayout title="首页">
+  {/* ── Hero ── */}
+  <section class="text-center py-10 space-y-4">
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-900">
+      安徽资助政策 × 同济大学对接导航
+    </h1>
+    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+      用时间轴告诉你：能办什么、何时办、去哪办、到同济怎么对接。
+    </p>
+    <a
+      href="/p/anhui"
+      class="inline-block px-8 py-3 bg-blue-700 text-white font-semibold rounded-lg hover:bg-blue-800 transition text-lg"
+    >
+      进入安徽专区
+    </a>
+    <p class="text-xs text-gray-400">更多省份即将上线</p>
+  </section>
+
+  {/* ── Identity Entry: "你是谁？" ── */}
+  <section class="my-8">
+    <h2 class="text-lg font-bold text-center mb-4">你是谁？</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      {STAGE_ORDER.map((stage) => (
+        <a
+          href={`/p/anhui?stage=${stage}`}
+          class="group block p-4 border rounded-lg hover:shadow-md hover:border-blue-400 transition text-center space-y-2"
+        >
+          <span class="text-3xl block">{stageIcons[stage]}</span>
+          <h3 class="font-bold text-gray-900 group-hover:text-blue-700 transition-colors">
+            {stageShortLabels[stage]}
+          </h3>
+          <p class="text-xs text-gray-500">{stageDescriptions[stage]}</p>
+          <span class="inline-block text-xs px-2 py-0.5 bg-blue-50 text-blue-700 rounded">
+            {stageCounts[stage]} 个项目
+          </span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  {/* ── Quick Scenarios ── */}
+  <section class="grid sm:grid-cols-3 gap-4 my-8">
+    <a href="/policies?category=loan" class="p-5 border rounded-lg hover:shadow-md hover:border-blue-300 transition text-center">
+      <span class="text-3xl block mb-2">{'\u{1F4B0}'}</span>
+      <h3 class="font-bold">办助学贷款</h3>
+      <p class="text-sm text-gray-500 mt-1">生源地贷款办理全流程</p>
+    </a>
+    <a href="/policy/TJ-CHANNEL-GREEN-2025" class="p-5 border rounded-lg hover:shadow-md hover:border-blue-300 transition text-center">
+      <span class="text-3xl block mb-2">{'\u{1F3EB}'}</span>
+      <h3 class="font-bold">绿色通道</h3>
+      <p class="text-sm text-gray-500 mt-1">报到当天交不起学费怎么办</p>
+    </a>
+    <a href="/_/plan" class="p-5 border rounded-lg hover:shadow-md hover:border-blue-300 transition text-center">
+      <span class="text-3xl block mb-2">{'\u{1F4CB}'}</span>
+      <h3 class="font-bold">行动清单</h3>
+      <p class="text-sm text-gray-500 mt-1">根据你的情况生成待办事项</p>
+    </a>
+  </section>
+
+  {/* ── Trust Indicator Bar ── */}
+  <section class="my-8 px-4 py-3 bg-gray-50 border rounded-lg flex flex-wrap items-center justify-between gap-3 text-sm text-gray-600">
+    <div class="flex flex-wrap gap-4">
+      <span><strong class="text-gray-900">{policyCards.length}</strong> 个政策项目</span>
+      <span><strong class="text-gray-900">{sourceSites.length}</strong> 个官方来源</span>
+      <span>最后核验：<strong class="text-gray-900">{maxDate}</strong></span>
+    </div>
+    <a href="/sources" class="text-blue-700 hover:underline">查看全部来源 &rarr;</a>
+  </section>
+
+  {/* ── Latest Changes ── */}
+  {latestChanges.length > 0 && (
+    <section class="my-8">
+      <h2 class="font-bold text-lg mb-3">最新动态</h2>
+      <ul class="space-y-2">
+        {latestChanges.map((entry) => (
+          <li class="flex gap-3 text-sm">
+            <span class="text-gray-400 shrink-0">{entry.date}</span>
+            <span class="text-gray-700">{entry.summary}</span>
+          </li>
+        ))}
+      </ul>
+      <a href="/changelog" class="text-sm text-blue-700 hover:underline mt-2 inline-block">
+        查看全部更新 &rarr;
+      </a>
+    </section>
+  )}
+</BaseLayout>
